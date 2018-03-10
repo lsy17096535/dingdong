@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bk_color"
+    android:orientation="vertical"
+    tools:context="com.intexh.bidong.main.square.VideoDetailActivity" >
+
+    <FrameLayout
+        android:id="@+id/layout_videodetail_videocontainer"
+        android:layout_width="match_parent"
+        android:layout_height="175dp"
+        android:background="#000000" >
+
+        <com.github.rtoshiro.view.video.FullscreenVideoLayout
+            android:id="@+id/video_videodetail_video"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/layout_videodetail_videocontainer" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true" >
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_videodetail_input"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="#ffffff"
+                android:padding="10dp" >
+
+                <Button
+                    android:id="@+id/btn_videodetail_send"
+                    style="@style/white_15_text"
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/selector_send"
+                    android:text="@string/common_send" />
+
+                <EditText
+                    android:id="@+id/edit_videodetail_input"
+                    style="@style/black_15_text"
+                    android:layout_width="fill_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@id/btn_videodetail_send"
+                    android:background="@drawable/input_bk"
+                    android:maxLines="5"
+                    android:cursorVisible="true"
+                    android:hint="@string/send_tips"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:textColorHint="#999999"
+                    android:textCursorDrawable="@drawable/cursor_bk" />
+            </RelativeLayout>
+
+            <in.srain.cube.views.ptr.PtrClassicFrameLayout
+                xmlns:cube_ptr="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/pull_videodetail_refresh"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@id/layout_videodetail_input"
+                cube_ptr:ptr_duration_to_close="200"
+                cube_ptr:ptr_duration_to_close_header="1000"
+                cube_ptr:ptr_keep_header_when_refresh="true"
+                cube_ptr:ptr_pull_to_fresh="true"
+                cube_ptr:ptr_ratio_of_header_height_to_refresh="1.2"
+                cube_ptr:ptr_resistance="1.7" >
+
+                <ScrollView
+                    android:id="@+id/scroll_videodetail_view"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <RelativeLayout
+                            android:id="@+id/layout_videodetail_playinfo"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#fff5f5"
+                            android:padding="5dp" >
+
+                            <TextView
+                                android:id="@+id/txt_videodetail_remark"
+                                style="@style/text_10_c6c6c6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="5dp"
+                                android:text="1111" />
+
+                            <LinearLayout
+                                android:id="@+id/layout_videodetail_countinfo"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal" >
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/icon_comment_grey" />
+
+                                <TextView
+                                    android:id="@+id/txt_videodetail_commentcount1"
+                                    style="@style/darkgray_13_text"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="4dp"
+                                    android:layout_marginRight="8dp"
+                                    android:text="111" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/icon_video_grey" />
+
+                                <TextView
+                                    android:id="@+id/txt_videodetail_playcount"
+                                    style="@style/darkgray_13_text"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="5dp"
+                                    android:text="111" />
+                            </LinearLayout>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/layout_videodetail_userinfo"
+                            android:layout_width="fill_parent"
+                            android:layout_height="75dp"
+                            android:background="#ffffff"
+                            android:paddingLeft="10dp" >
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:id="@+id/image_videodetail_avatar"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_centerVertical="true"
+                                android:src="@drawable/navigation_me" />
+
+                            <ImageView
+                                android:id="@+id/image_videodetail_model"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignBottom="@id/image_videodetail_avatar"
+                                android:layout_alignRight="@id/image_videodetail_avatar"
+                                android:src="@drawable/icon_models"
+                                android:visibility="invisible"/>
+
+                            <Button
+                                android:id="@+id/btn_videodetail_contact"
+                                style="@style/white_15_text"
+                                android:layout_width="70dp"
+                                android:layout_height="match_parent"
+                                android:layout_alignParentRight="true"
+                                android:background="@drawable/selector_confirm"
+                                android:text="与TA\n互动" />
+
+                            <LinearLayout
+                                android:id="@+id/layout_videodetail_info"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="5dp"
+                                android:layout_toLeftOf="@id/btn_videodetail_contact"
+                                android:layout_toRightOf="@id/image_videodetail_avatar"
+                                android:orientation="vertical" >
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal" >
+
+                                    <TextView
+                                        android:id="@+id/txt_videodetail_userinfo"
+                                        style="@style/black_15_text"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="1111" />
+
+                                    <TextView
+                                        android:id="@+id/txt_videodetail_age"
+                                        style="@style/white_13_text"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="5dp"
+                                        android:text="1111"
+                                        android:background="#cccccc" />
+                                    
+                                    <TextView
+                                        android:id="@+id/txt_videodetail_height"
+                                        style="@style/white_13_text"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="5dp"
+                                        android:text="1111" 
+                                        android:background="#cccccc"/>
+                                    
+                                    <TextView
+                                        android:id="@+id/txt_videodetail_weight"
+                                        style="@style/white_13_text"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="5dp"
+                                        android:text="1111" 
+                                        android:background="#cccccc"
+                                        />
+                                    
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal"
+                                    android:layout_marginTop="4dp" >
+
+                                    <ImageView
+                                        android:id="@+id/image_videodetail_vip"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" 
+                                        android:layout_marginRight="5dp"/>
+
+                                    <TextView
+                                        android:id="@+id/txt_videodetail_addressinfo"
+                                        style="@style/gray_13_text"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginRight="5dp"
+                                        android:singleLine="true"
+                                        android:text="1111" />
+                                    
+                                    <TextView
+                                        android:id="@+id/txt_videodetail_career"
+                                        style="@style/white_13_text"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:singleLine="true"
+                                        android:text="1111" 
+                                        android:background="#cccccc"/>
+                                </LinearLayout>
+
+                                <TextView
+                                    android:id="@+id/txt_videodetail_sign"
+                                    style="@style/gray_13_text"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="4dp"
+                                    android:singleLine="true"
+                                    android:text="1111" />
+                            </LinearLayout>
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            style="@style/horizon_gray_divider"
+                            android:layout_marginBottom="10dp" >
+                        </LinearLayout>
+
+                        <LinearLayout style="@style/horizon_gray_divider" >
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#ffffff" >
+
+                            <LinearLayout
+                                android:layout_width="3dp"
+                                android:layout_height="17dp"
+                                android:layout_centerVertical="true"
+                                android:background="#f7799a" >
+                            </LinearLayout>
+
+                            <TextView
+                                style="@style/black_15_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="10dp"
+                                android:text="@string/commmon_comment" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal" >
+
+                                <TextView
+                                    android:id="@+id/txt_videodetail_commentcount"
+                                    style="@style/darkgray_13_text"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+
+                                <TextView
+                                    style="@style/darkgray_13_text"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="10dp"
+                                    android:text="@string/comment_count" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/icon_arrow_grey"
+                                    android:visibility="gone" />
+                            </LinearLayout>
+                        </RelativeLayout>
+
+                        <LinearLayout style="@style/horizon_gray_divider" >
+                        </LinearLayout>
+
+                        <com.intexh.bidong.widgets.RealHeightListView
+                            android:id="@+id/list_videodetail_list"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content" />
+
+                        <LinearLayout style="@style/horizon_gray_divider" >
+                        </LinearLayout>
+                    </LinearLayout>
+                </ScrollView>
+            </in.srain.cube.views.ptr.PtrClassicFrameLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

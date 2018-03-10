@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom"
+    android:orientation="vertical" >
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:background="#eeeeee"
+        >
+        <de.hdodenhof.circleimageview.CircleImageView 
+            android:id="@+id/image_giftconfirm_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="26dp"
+            android:minHeight="45dp"
+            android:minWidth="45dp"
+            android:src="@drawable/selector_giftbk"
+            />
+        
+        <LinearLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="5dp"
+            >
+            <TextView
+                android:id="@+id/txt_giftconfirm_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/black_12_text"
+                android:text="1111金币"
+                />
+
+            <ImageView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_diamondsgift"
+                />
+            
+
+        </LinearLayout>
+        
+		
+        <TextView 
+            android:id="@+id/txt_giftconfirm_tips"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			style="@style/black_15_text"
+			android:text="@string/send_gift_tips"
+			android:layout_marginTop="15dp"
+			android:visibility="gone"
+            />
+        
+        <Button 
+            android:id="@+id/btn_giftconfirm_confirm"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/selector_giftconfirm"
+            android:textColor="@drawable/text_giftcancel"
+            android:text="@string/common_sent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            />
+        
+        <Button 
+            android:id="@+id/btn_giftconfirm_cancel"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/selector_giftcancel"
+            android:textColor="@drawable/text_giftconfirm"
+            android:text="@string/common_cancel"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:layout_marginTop="18dp"
+            />
+        
+        <LinearLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            ></LinearLayout>
+        
+   </LinearLayout>
+    
+
+</LinearLayout>

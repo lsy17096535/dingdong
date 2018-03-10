@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bk_color">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txt_baseinfo_mobile"
+            style="@style/text_30_f28790"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingTop="20dp"
+            android:text="111111" />
+        <TextView
+            android:id="@+id/txt_baseinfo_pwd"
+            style="@style/text_15_blue"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="[修改密码]" />
+
+        <LinearLayout
+            style="@style/horizon_gray_divider"
+            android:layout_marginTop="20dp" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="14dp">
+                <TextView
+                    android:id="@+id/txt_baseinfo_nickname_label"
+                    style="@style/text_15_8c8c8c"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/reginfo_nickname" />
+
+                <EditText
+                    android:id="@+id/edit_baseinfo_nickname"
+                    style="@style/black_15_text"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_toRightOf="@id/txt_baseinfo_nickname_label"
+                    android:background="@null"
+                    android:cursorVisible="true"
+                    android:gravity="center_vertical|right"
+                    android:textCursorDrawable="@drawable/cursor_bk"
+                    android:maxLength="5"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                style="@style/horizon_gray_divider"
+                android:layout_marginLeft="14dp" >
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="14dp" >
+
+                <TextView
+                    android:id="@+id/txt_baseinfo_agetxt"
+                    style="@style/text_15_8c8c8c"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/reginfo_age" />
+
+                <TextView
+                    android:id="@+id/image_baseinfo_arrow1"
+                    style="@style/text_15_8c8c8c"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text=" 岁" />
+
+                <EditText
+                    android:id="@+id/edit_baseinfo_age"
+                    style="@style/black_15_text"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/image_baseinfo_arrow1"
+                    android:layout_toRightOf="@id/txt_baseinfo_agetxt"
+                    android:background="@null"
+                    android:cursorVisible="true"
+                    android:gravity="right"
+                    android:text="18"
+                    android:textColorHint="#999999"
+                    android:textCursorDrawable="@drawable/cursor_bk"
+                    android:inputType="number"
+                    android:maxLength="3"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                style="@style/horizon_gray_divider"
+                android:layout_marginLeft="14dp" >
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="14dp" >
+
+                <TextView
+                    android:id="@+id/txt_baseinfo_heighttxt"
+                    style="@style/text_15_8c8c8c"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/reginfo_height" />
+
+                <TextView
+                    android:id="@+id/image_baseinfo_arrow2"
+                    style="@style/text_15_8c8c8c"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text=" cm" />
+
+                <EditText
+                    android:id="@+id/edit_baseinfo_height"
+                    style="@style/black_15_text"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/image_baseinfo_arrow2"
+                    android:layout_toRightOf="@id/txt_baseinfo_heighttxt"
+                    android:background="@null"
+                    android:cursorVisible="true"
+                    android:gravity="right"
+                    android:text="175"
+                    android:textColorHint="#999999"
+                    android:textCursorDrawable="@drawable/cursor_bk"
+                    android:inputType="number"
+                    android:maxLength="3"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                style="@style/horizon_gray_divider"
+                android:layout_marginLeft="14dp" >
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="14dp" >
+
+                <TextView
+                    android:id="@+id/txt_baseinfo_weighttxt"
+                    style="@style/text_15_8c8c8c"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/reginfo_weight" />
+
+                <TextView
+                    android:id="@+id/image_baseinfo_arrow3"
+                    style="@style/text_15_8c8c8c"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text=" kg" />
+
+                <EditText
+                    android:id="@+id/edit_baseinfo_weight"
+                    style="@style/black_15_text"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/image_baseinfo_arrow3"
+                    android:layout_toRightOf="@id/txt_baseinfo_weighttxt"
+                    android:background="@null"
+                    android:cursorVisible="true"
+                    android:gravity="right"
+                    android:text="68"
+                    android:textColorHint="#999999"
+                    android:textCursorDrawable="@drawable/cursor_bk"
+                    android:inputType="number"
+                    android:maxLength="3" />
+            </RelativeLayout>
+
+            <LinearLayout
+                style="@style/horizon_gray_divider"
+                android:layout_marginLeft="14dp" >
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_baseinfo_career"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="14dp" >
+
+                <TextView
+                    android:id="@+id/txt_baseinfo_careertxt"
+                    style="@style/text_15_8c8c8c"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/reginfo_career" />
+
+                    <TextView
+                    android:id="@+id/edit_baseinfo_career"
+                    style="@style/black_15_text"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@null"
+                    android:cursorVisible="true"
+                    android:gravity="right"
+                    android:text="111"
+                    android:textColorHint="#999999"
+                    android:textCursorDrawable="@drawable/cursor_bk"
+                    android:layout_toRightOf="@id/txt_baseinfo_careertxt"
+                    android:maxLength="24"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                style="@style/horizon_gray_divider"
+                android:layout_marginLeft="14dp" >
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="14dp" >
+                <TextView
+                    android:id="@+id/txt_baseinfo_sign_label"
+                    style="@style/text_15_8c8c8c"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/reginfo_sign" />
+
+                <EditText
+                    android:id="@+id/edit_baseinfo_sign"
+                    style="@style/black_15_text"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_toRightOf="@id/txt_baseinfo_sign_label"
+                    android:background="@null"
+                    android:cursorVisible="true"
+                    android:gravity="right"
+                    android:textCursorDrawable="@drawable/cursor_bk"
+                    android:maxLength="32"
+                    android:textColorHint="#999999"
+                    android:hint="未填写"/>
+            </RelativeLayout>
+
+            <LinearLayout style="@style/horizon_gray_divider" >
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#ffffff"
+            android:layout_marginTop="10dp"
+            >
+            <LinearLayout
+                style="@style/horizon_gray_divider"
+                ></LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="14dp" >
+
+                <TextView
+                    android:id="@+id/txt_baseinfo_usernametxt"
+                    style="@style/text_15_8c8c8c"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/reginfo_username" />
+
+                <ImageView
+                    android:id="@+id/image_baseinfo_arrow5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/icon_arrow_grey"
+                    android:visibility="gone" />
+
+                <EditText
+                    android:id="@+id/edit_baseinfo_username"
+                    style="@style/black_15_text"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/image_baseinfo_arrow5"
+                    android:layout_toRightOf="@id/txt_baseinfo_usernametxt"
+                    android:layout_marginRight="5dp"
+                    android:background="@null"
+                    android:cursorVisible="true"
+                    android:gravity="right"
+                    android:hint="未填写"
+                    android:textColorHint="#999999"
+                    android:textCursorDrawable="@drawable/cursor_bk"
+                    android:maxLength="24"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                style="@style/horizon_gray_divider"
+                ></LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            style="@style/black_12_text"
+            android:text="@string/reginfo_usernametips"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            />
+
+        <Button
+            android:id="@+id/btn_baseinfo_save"
+            style="@style/white_15_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@drawable/selector_chargebtn"
+            android:minWidth="100dp"
+            android:text="@string/common_save" />
+
+    </LinearLayout>
+
+</ScrollView>

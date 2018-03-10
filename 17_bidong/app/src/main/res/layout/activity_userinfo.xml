@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bk_color"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/txt_userinfo_mobile"
+        style="@style/text_30_f28790"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:paddingBottom="14dp"
+        android:paddingTop="15dp"
+        android:text="111111" />
+
+    <LinearLayout 
+        style="@style/horizon_gray_divider"
+        ></LinearLayout>
+    <RelativeLayout
+        android:id="@+id/layout_userinfo_nickname"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:padding="14dp" >
+
+        <TextView
+            style="@style/text_15_8c8c8c"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="昵称" />
+
+        <ImageView
+            android:id="@+id/image_userinfo_nicknamearrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_arrow_grey" />
+
+        <TextView
+            android:id="@+id/txt_userinfo_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/image_userinfo_nicknamearrow"
+            android:text="111"
+            style="@style/black_15_text"
+             />
+    </RelativeLayout>
+    
+    <LinearLayout 
+        style="@style/horizon_gray_divider"
+        ></LinearLayout>
+    
+    <LinearLayout 
+        style="@style/horizon_gray_divider"
+        android:layout_marginTop="10dp"
+        ></LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_userinfo_pwd"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:padding="14dp" >
+
+        <TextView
+            style="@style/text_15_8c8c8c"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="密码" />
+
+        <ImageView
+            android:id="@+id/image_userinfo_pwdarrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_arrow_grey" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/image_userinfo_pwdarrow"
+            style="@style/text_15_8c8c8c"
+            android:text="点击修改"
+            />
+    </RelativeLayout>
+    
+    <LinearLayout 
+        style="@style/horizon_gray_divider"
+        ></LinearLayout>
+    
+</LinearLayout>

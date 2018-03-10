@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bk_color"
+     >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            style="@style/horizon_gray_divider"
+            android:layout_marginTop="10dp" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/image_giftdetail_icon"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="15dp"
+                android:minHeight="50dp"
+                android:minWidth="50dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/txt_giftdetail_giftname"
+                    style="@style/text_15_6e6e6e"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="jkjk" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_diamondsgift" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txt_giftdetail_time"
+                style="@style/text_10_c6c6c6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:text="jkjk" />
+
+            <LinearLayout
+                style="@style/horizon_gray_divider"
+                android:layout_marginTop="20dp" >
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_giftdetail_user"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp" >
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/image_giftdetail_avatar"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/navigation_me" />
+
+                <ImageView
+                    android:id="@+id/image_giftdetail_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/icon_arrow_grey" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toLeftOf="@id/image_giftdetail_arrow"
+                    android:layout_toRightOf="@id/image_giftdetail_avatar"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/txt_giftdetail_userinfo"
+                            style="@style/black_15_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1111" />
+
+                        <TextView
+                            android:id="@+id/txt_giftdetail_age"
+                            style="@style/white_13_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:background="#cccccc"
+                            android:text="1111" />
+
+                        <TextView
+                            android:id="@+id/txt_giftdetail_height"
+                            style="@style/white_13_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:background="#cccccc"
+                            android:text="1111" />
+
+                        <TextView
+                            android:id="@+id/txt_giftdetail_weight"
+                            style="@style/white_13_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:background="#cccccc"
+                            android:text="1111" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:id="@+id/image_giftdetail_vip"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/txt_giftdetail_addressinfo"
+                            style="@style/gray_13_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:text="1111" />
+
+                        <TextView
+                            android:id="@+id/txt_giftdetail_career"
+                            style="@style/white_13_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="#cccccc"
+                            android:singleLine="true"
+                            android:layout_marginLeft="10dp"
+                            android:text="1111" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/txt_giftdetail_sign"
+                        style="@style/gray_13_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:singleLine="true"
+                        android:text="1111" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout style="@style/horizon_gray_divider" >
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            style="@style/text_13_f28790"
+            android:id="@+id/label_giftdetail_prompt"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:text="@string/gift_receive_prompt"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btn_giftdetail_accept"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:background="@drawable/selector_accept"
+                android:minWidth="135dp"
+                android:text="@string/common_accept"
+                android:textColor="@drawable/text_accept" />
+
+            <Button
+                android:id="@+id/btn_giftdetail_refuse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="14dp"
+                android:background="@drawable/selector_refuse"
+                android:minWidth="135dp"
+                android:text="@string/common_refuse"
+                android:textColor="@drawable/text_refuse" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_giftdetail_share"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:visibility="invisible">
+            <ImageView
+                android:id="@+id/image_giftdetail_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/checkbox_selector"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/text_13_999999"
+                android:layout_marginLeft="10dp"
+                android:text="分享到微信朋友圈，晒晒送我的魅力"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

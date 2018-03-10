@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_imagebrowser_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+    <RelativeLayout
+        android:id="@+id/layout_imagebrowser_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        >
+        <ImageView
+            android:id="@+id/image_imagebrowser_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/icon_ban_back"
+            android:paddingLeft="14dp"
+            />
+        <TextView
+            android:id="@+id/txt_imagebrowser_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            style="@style/white_20_text"
+            android:text="5/9"/>
+        <ImageView
+            android:id="@+id/image_imagebrowser_del"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingRight="14dp"/>
+    </RelativeLayout>
+
+    <com.intexh.bidong.widgets.HackyViewPager
+        android:id="@+id/pager_imagebrowser_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/layout_imagebrowser_title"
+        ></com.intexh.bidong.widgets.HackyViewPager>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="#7f000000"
+        android:layout_alignParentBottom="true">
+        <TextView
+            android:id="@+id/txt_imagebrowser_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/white_13_text"
+            android:text="1111"/>
+    </LinearLayout>
+</RelativeLayout>

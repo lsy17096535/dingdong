@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#ffffff" >
+    <TextView 
+        android:id="@+id/txt_cashapply_month"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="14dp"
+        android:paddingTop="7dp"
+        android:paddingBottom="7dp"
+        style="@style/text_13_c5c8c8"
+        android:background="#f0f7f6"
+        android:text="本月"
+        />
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="14dp"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:gravity="center_vertical"
+        >
+        <LinearLayout 
+            android:layout_weight="1.0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="left|center_vertical"
+            >
+            <TextView 
+                android:id="@+id/txt_cashapply_weekday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/text_13_999999"
+                android:text="111"
+                />
+            <TextView 
+                android:id="@+id/txt_cashapply_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/text_10_c6c6c6"
+                android:text="111"
+                />
+        </LinearLayout>
+        
+        <LinearLayout 
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1.0"
+            android:gravity="center_vertical"
+            >
+            <ImageView 
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:src="@drawable/icon_diamondsgift"
+				android:layout_marginLeft="30dp"
+                />
+            <TextView 
+            android:id="@+id/txt_cashapply_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/text_15_8c8c8c"
+            android:text="111"
+            />
+        </LinearLayout>
+        
+        <LinearLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            >
+            <Button
+            android:id="@+id/btn_cashapply_money"
+            style="@style/text_13_f51c4b"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:background="@drawable/selector_charge"
+            android:minWidth="50dp"
+            android:text="1111"
+            />
+        </LinearLayout>
+        
+        <LinearLayout 
+            android:id="@+id/layout_cashapply_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:gravity="right"
+            >
+             <Button 
+            android:id="@+id/btn_cashapply_status"
+            style="@style/white_13_text"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:background="@drawable/selector_login"
+            android:minWidth="50dp"
+            android:text="1111"
+            android:layout_marginRight="14dp"
+            />
+            
+        </LinearLayout>
+        
+        
+    </LinearLayout>
+    
+    
+    <LinearLayout
+        android:id="@+id/layout_cashapply_divider" 
+        style="@style/horizon_gray_divider"
+        android:layout_marginLeft="14dp"
+        ></LinearLayout>
+    
+     <LinearLayout
+        android:id="@+id/layout_cashapply_fulldivider" 
+        style="@style/horizon_gray_divider"
+        ></LinearLayout>
+
+</LinearLayout>

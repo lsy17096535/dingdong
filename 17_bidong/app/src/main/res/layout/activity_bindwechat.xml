@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/main_bk_color">
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#ffffff"
+        android:padding="20dp"
+        android:gravity="center_horizontal"
+        >
+        <LinearLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="bottom"
+            android:layout_marginTop="20dp"
+            >
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/text_25_f51c4b"
+                android:text="0.01"
+                />
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/text_13_f51c4b"
+                android:text="元"
+                />
+        </LinearLayout>
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/black_15_text"
+            android:text="@string/wechat_bind_tips"
+            android:layout_marginTop="30dp"
+            />
+    </LinearLayout>
+    
+    <LinearLayout 
+        style="@style/horizon_gray_divider"
+        ></LinearLayout>
+    
+    <Button 
+        android:id="@+id/btn_bindwechat_pay"
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:background="@drawable/selector_login"
+        android:text="@string/common_pay"
+        style="@style/white_15_text"
+        android:layout_marginTop="12dp"
+        />
+
+</LinearLayout>

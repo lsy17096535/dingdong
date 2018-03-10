@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/main_bk_color" >
+    
+    <LinearLayout 
+        style="@style/horizon_gray_divider"
+        android:layout_marginTop="10dp"></LinearLayout>
+
+    <com.daimajia.swipe.SwipeLayout
+        xmlns:swipe="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/swipe_myoffservice_item"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        swipe:leftEdgeSwipeOffset="0dp"
+        swipe:rightEdgeSwipeOffset="0dp" >
+
+        <LinearLayout
+            android:id="@+id/swipe_myoffservice_item_bottom_wrapper"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="#FF5534"
+            android:gravity="center"
+            android:tag="Bottom3"
+            android:weightSum="1" >
+
+            <TextView
+                android:id="@+id/txt_myoffservice_item_menudelete"
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:background="#f15353"
+                android:gravity="center"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:text="删除"
+                android:textColor="#ffffff"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_myoffservice_item_container"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:background="#ffffff">
+
+            <ImageView
+                android:id="@+id/image_myoffservice_item_icon"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerVertical="true" />
+
+            <TextView
+                android:id="@+id/txt_myoffservice_item_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/image_myoffservice_item_icon"
+                android:layout_alignTop="@id/image_myoffservice_item_icon"
+                android:layout_marginLeft="5dp"
+                style="@style/black_15_text"
+                android:text="名称"
+                />
+
+            <TextView
+                android:id="@+id/txt_myoffservice_item_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/txt_myoffservice_item_name"
+                style="@style/gray_13_text"
+                android:text="1天前"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="30dp"
+                android:gravity="right"
+                />
+
+            <TextView
+                android:id="@+id/txt_myoffservice_item_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/image_myoffservice_item_icon"
+                android:layout_below="@id/txt_myoffservice_item_name"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                style="@style/red_13_text"
+                android:text="100元/小时"
+                />
+
+            <ImageView
+                android:id="@+id/image_myoffservice_item_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icon_arrow_grey" />
+
+            <TextView
+                android:id="@+id/txt_myoffservice_item_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/image_myoffservice_item_arrow"
+                android:layout_centerVertical="true"
+                style="@style/text_12_a9a9a9"
+                android:text="审核通过"
+                />
+
+            <TextView
+                android:id="@+id/txt_myoffservice_item_descr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/image_myoffservice_item_icon"
+                android:layout_alignBottom="@id/image_myoffservice_item_icon"
+                android:layout_marginTop="7dp"
+                android:layout_marginLeft="5dp"
+                android:singleLine="true"
+                android:ellipsize="end"
+                style="@style/gray_13_text"
+                android:text="描述" />
+
+        </RelativeLayout>
+
+    </com.daimajia.swipe.SwipeLayout>
+
+    <LinearLayout style="@style/horizon_gray_divider"></LinearLayout>
+
+</LinearLayout>

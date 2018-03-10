@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/image_watchme_avatar"
+        android:layout_width="45dp"
+        android:layout_height="45dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="10dp">
+        <TextView
+            android:id="@+id/txt_watchme_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/black_12_text"
+            android:text="1111"
+            />
+        <TextView
+            android:id="@+id/txt_watchme_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/text_10_989898"
+            android:text="111"
+            android:layout_marginTop="7dp"/>
+    </LinearLayout>
+    
+</LinearLayout>

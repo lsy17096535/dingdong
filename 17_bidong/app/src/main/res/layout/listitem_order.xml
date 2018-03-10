@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/main_bk_color" >
+
+    <LinearLayout
+        style="@style/horizon_gray_divider"
+        android:layout_marginTop="10dp"
+        ></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#ffffff"
+        android:padding="10dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/image_order_avatar"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/ease_default_avatar" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+                <TextView
+                    android:id="@+id/txt_order_username"
+                    style="@style/black_15_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="万里红"  />
+                <TextView
+                    android:id="@+id/txt_order_age"
+                    style="@style/white_10_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="1111"
+                    />
+                <TextView
+                    style="@style/white_10_text"
+                    android:id="@+id/txt_order_occup"
+                    android:background="@color/text_bg_color_gray"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="模特"/>
+                <TextView
+                    style="@style/gray_13_text"
+                    android:id="@+id/txt_order_ctime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="9分钟前"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:id="@+id/txt_order_useraddr"
+                    style="@style/gray_13_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="杭州市西湖区" />
+                <TextView
+                    android:id="@+id/txt_order_userdis"
+                    style="@style/gray_13_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="10m"/>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/gray_horizon_divider"
+                android:layout_marginTop="10dp"></LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/layout_bg_color"
+                android:padding="10dp"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/layout_order_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+                    <ImageView
+                        android:id="@+id/image_order_item_icon"
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
+                        android:src="@drawable/ease_default_avatar" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/image_order_item_icon"
+                        android:layout_marginLeft="5dp"
+                        android:orientation="vertical">
+                        <TextView
+                            style="@style/lightred_13_text"
+                            android:id="@+id/txt_order_itemname"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="享美食"
+                            />
+                        <TextView
+                            style="@style/lightred_13_text"
+                            android:id="@+id/txt_order_itemprice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="100元/小时" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/image_order_gift_icon"
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
+                        android:src="@drawable/ease_default_avatar"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/image_order_gift_icon"
+                        android:layout_marginLeft="5dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/lightred_13_text"
+                            android:id="@+id/txt_order_giftname"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="玫瑰花" />
+
+                        <TextView
+                            style="@style/lightred_13_text"
+                            android:id="@+id/txt_order_giftprice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="3 金币" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+                <TextView
+                    style="@style/gray_13_text"
+                    android:id="@+id/label_order_otime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="约定时间" />
+
+                <TextView
+                    style="@style/gray_13_text"
+                    android:id="@+id/txt_order_otime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/label_order_otime"
+                    android:layout_marginLeft="5dp"
+                    android:text="10月20日" />
+
+                <TextView
+                    style="@style/darkgray_13_text"
+                    android:id="@+id/txt_order_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="待接单" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

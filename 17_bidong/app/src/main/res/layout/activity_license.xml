@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/layout_bg_color_white"
+    android:orientation="vertical" >
+    <WebView 
+		android:id="@+id/web_license_web"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone"
+        />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/content_tv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="15dp"
+                style="@style/black_15_text"
+                android:text="尊敬的用户，欢迎使用本产品，根据国家相关规定抵制色情，低俗，暴力，政治等一切违规内容，一经发现将封停账号。
+为了确保您的正常使用及账号安全。请尽快完成相关实名认证。
+您在使用过程中遇到任何问题请搜索官方微信公众号：哔咚APP，通过公众号联系客服人员进行处理，还可通过公众号参与官方有奖送现金等活动。"/>
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>

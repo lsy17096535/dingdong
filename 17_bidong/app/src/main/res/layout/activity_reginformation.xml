@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/main_bk_color" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/image_reginfo_avatar"
+                android:layout_width="86dp"
+                android:layout_height="86dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/navigation_me"
+                app:civ_border_color="#FF000000"
+                app:civ_border_width="1px" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="21dp"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/btn_reginf_male"
+                    style="@style/white_15_text"
+                    android:layout_width="82dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="2dp"
+                    android:background="@drawable/selector_login_rev"
+                    android:gravity="center"
+                    android:text="@string/male_text" />
+
+                <Button
+                    android:id="@+id/btn_reginf_female"
+                    style="@style/white_15_text"
+                    android:layout_width="82dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/selector_login_rev"
+                    android:gravity="center"
+                    android:text="@string/female_text" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/darkgray_13_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="13dp"
+                android:layout_marginTop="12dp"
+                android:text="@string/gender_tips" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:orientation="vertical" >
+
+                <LinearLayout style="@style/gray_horizon_divider" >
+                </LinearLayout>
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+                    <TextView
+                        android:id="@+id/txt_reginfo_nickname_label"
+                        style="@style/darkgray_15_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_centerVertical="true"
+                        android:text="@string/reginfo_nickname" />
+
+                    <EditText
+                        android:id="@+id/edit_reginfo_nickname"
+                        style="@style/text_15_6e6e6e"
+                        android:layout_width="fill_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginRight="13dp"
+                        android:layout_toRightOf="@id/txt_reginfo_nickname_label"
+                        android:background="@null"
+                        android:singleLine="true"
+                        android:cursorVisible="true"
+                        android:gravity="center_vertical|right"
+                        android:textCursorDrawable="@drawable/cursor_bk"
+                        android:maxLength="5"/>
+                </RelativeLayout>
+
+                <LinearLayout style="@style/gray_horizon_divider" >
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/txt_reginfo_age_label"
+                        style="@style/darkgray_15_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_centerVertical="true"
+                        android:text="@string/reginfo_age" />
+
+                    <TextView
+                        android:id="@+id/txt_reginfo_age"
+                        style="@style/darkgray_15_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="13dp"
+                        android:text=" 岁" />
+
+                    <EditText
+                        android:id="@+id/edit_reginfo_age"
+                        style="@style/text_15_6e6e6e"
+                        android:layout_width="fill_parent"
+                        android:layout_height="45dp"
+                        android:layout_toRightOf="@id/txt_reginfo_age_label"
+                        android:layout_toLeftOf="@id/txt_reginfo_age"
+                        android:background="@null"
+                        android:cursorVisible="true"
+                        android:gravity="center_vertical|right"
+                        android:textCursorDrawable="@drawable/cursor_bk"
+                        android:inputType="number"
+                        android:maxLength="3"/>
+
+                </RelativeLayout>
+
+                <LinearLayout style="@style/gray_horizon_divider" >
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/txt_reginfo_height_label"
+                        style="@style/darkgray_15_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_centerVertical="true"
+                        android:text="身高" />
+
+                    <TextView
+                        android:id="@+id/txt_reginf_heightunit"
+                        style="@style/darkgray_15_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="13dp"
+                        android:text=" cm" />
+
+                    <EditText
+                        android:id="@+id/edit_reginfo_height"
+                        style="@style/text_15_6e6e6e"
+                        android:layout_width="fill_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="12dp"
+                        android:layout_toRightOf="@id/txt_reginfo_height_label"
+                        android:layout_toLeftOf="@id/txt_reginf_heightunit"
+                        android:background="@null"
+                        android:cursorVisible="true"
+                        android:gravity="center_vertical|right"
+                        android:textCursorDrawable="@drawable/cursor_bk" 
+                        android:inputType="number"
+                        android:maxLength="3"/>
+                </RelativeLayout>
+
+                <LinearLayout style="@style/gray_horizon_divider" >
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/txt_reginfo_weight_label"
+                        style="@style/darkgray_15_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_centerVertical="true"
+                        android:text="@string/reginfo_weight" />
+
+                    <TextView
+                        android:id="@+id/txt_reginf_weightunit"
+                        style="@style/darkgray_15_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="13dp"
+                        android:text=" kg" />
+
+                    <EditText
+                        android:id="@+id/edit_reginfo_weight"
+                        style="@style/text_15_6e6e6e"
+                        android:layout_width="fill_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="12dp"
+                        android:layout_toRightOf="@id/txt_reginfo_weight_label"
+                        android:layout_toLeftOf="@id/txt_reginf_weightunit"
+                        android:background="@null"
+                        android:cursorVisible="true"
+                        android:gravity="center_vertical|right"
+                        android:textCursorDrawable="@drawable/cursor_bk" 
+                        android:inputType="number"
+                        android:maxLength="3"/>
+                </RelativeLayout>
+
+                <LinearLayout style="@style/gray_horizon_divider" >
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layout_reginfo_career"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+                    <TextView
+                        android:id="@+id/txt_reginfo_career_label"
+                        style="@style/darkgray_15_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_centerVertical="true"
+                        android:text="@string/reginfo_career" />
+
+                    <TextView
+                        android:id="@+id/txt_reginfo_career"
+                        style="@style/text_15_6e6e6e"
+                        android:layout_width="fill_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginRight="13dp"
+                        android:layout_toRightOf="@id/txt_reginfo_career_label"
+                        android:background="@null"
+                        android:cursorVisible="true"
+                        android:gravity="center_vertical|right"
+                        android:textCursorDrawable="@drawable/cursor_bk"
+                        android:inputType="number"
+                        android:maxLength="5"/>
+                </RelativeLayout>
+
+                <LinearLayout style="@style/gray_horizon_divider" >
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+                    <TextView
+                        android:id="@+id/txt_reginfo_sign_label"
+                        style="@style/darkgray_15_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_centerVertical="true"
+                        android:text="@string/reginfo_sign" />
+
+                    <EditText
+                        android:id="@+id/edit_reginfo_sign"
+                        style="@style/text_15_6e6e6e"
+                        android:layout_width="fill_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginRight="13dp"
+                        android:layout_toRightOf="@id/txt_reginfo_sign_label"
+                        android:background="@null"
+                        android:cursorVisible="true"
+                        android:gravity="center_vertical|right"
+                        android:textCursorDrawable="@drawable/cursor_bk"
+                        android:maxLength="32"/>
+                </RelativeLayout>
+
+                <LinearLayout style="@style/gray_horizon_divider" >
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_reginfo_next"
+                style="@style/white_15_text"
+                android:layout_width="fill_parent"
+                android:layout_height="44dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/selector_login"
+                android:gravity="center"
+                android:text="@string/reg_complete" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

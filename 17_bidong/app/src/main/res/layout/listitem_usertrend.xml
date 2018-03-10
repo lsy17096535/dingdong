@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#ffffff"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/txt_usertrend_remark"
+            style="@style/black_13_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:singleLine="true"
+            android:text="今天心情好" />
+
+        <!-- 不同的地方 -->
+        <ViewStub
+            android:id="@+id/viewstub_usertrend_video_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+            <TextView
+                style="@style/text_13_999999"
+                android:id="@+id/txt_usertrend_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="9分钟前"
+                android:layout_centerVertical="true"/>
+            
+            <LinearLayout
+                android:id="@+id/layout_usertrend_playcomment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_comment_grey" />
+                <TextView
+                    android:id="@+id/txt_usertrend_commentcount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="10dp"
+                    style="@style/text_10_808080"
+                    android:text="1111" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_video_grey" />
+                <TextView
+                    android:id="@+id/txt_usertrend_playcount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    style="@style/text_10_808080"
+                    android:text="1111" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+</LinearLayout>

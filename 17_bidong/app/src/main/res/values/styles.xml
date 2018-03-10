@@ -1,0 +1,404 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="Theme.AppCompat.NoActionBar">
+        <!--<item name="android:windowIsTranslucent">true</item>-->
+        <item name="actionSheetStyle">@style/ActionSheetStyleiOS7</item>
+        <item name="colorPrimary">#f97799</item>
+        <item name="colorPrimaryDark">#f97799</item>
+        <item name="colorAccent">#f97799</item>
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!--
+        <item name="android:windowAnimationStyle">@style/Animation.Activity.Translucent.Style</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        -->
+    </style>
+
+    <style name="MMListItem">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="MMFriendListItem">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:paddingLeft">16.0dip</item>
+        <item name="android:paddingTop">6.0dip</item>
+        <item name="android:paddingRight">6.0dip</item>
+        <item name="android:paddingBottom">6.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="MMListCatalog">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">#f6f6f6</item>
+        <item name="android:paddingTop">2.0dip</item>
+        <item name="android:paddingBottom">2.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    
+     <style name="MMFontTitleInList">
+        <item name="android:textSize">16.0dip</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="MMFontTipInList">
+        <item name="android:textSize">14.0dip</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    
+    <!-- Activity style -->
+    <style name="activity_notitle" parent="Theme.AppCompat.NoActionBar">
+        <!-- <item name="android:windowIsTranslucent">true</item> -->
+        <item name="actionSheetStyle">@style/ActionSheetStyleiOS7</item>
+    </style>
+    
+    <!-- Activity style -->
+    <style name="activity_video" parent="Theme.AppCompat.NoActionBar">
+       <!--  <item name="android:windowIsTranslucent">true</item>  --> 
+        <item name="actionSheetStyle">@style/ActionSheetStyleiOS7</item>
+        <item name="android:windowBackground">@color/main_bk_color</item>
+    </style>
+    
+    <style name="activity_transparent" parent="@style/activity_notitle">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@color/activity_transparent</item>
+    </style>
+
+    <!-- RadioButton style -->
+    <style name="radiobutton_style">
+        <item name="android:button">@drawable/selector_radio</item>
+        <item name="android:background">@null</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">#8c8c8c</item>
+    </style>
+
+    <!-- CheckBox style -->
+    <style name="checkbox_block_style">
+        <item name="android:button">@null</item>
+        <item name="android:background">@drawable/selector_checkbox</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">#8c8c8c</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+<!-- text style -->
+    <style name="black_25_text">
+        <item name="android:textSize">25sp</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+
+    <style name="black_15_text">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">#333333</item>
+    </style>
+
+    <style name="black_13_text">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">#333333</item>
+    </style>
+    
+    <style name="black_12_text">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#333333</item>
+    </style>
+    
+    <style name="white_18_text">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+    
+    <style name="white_15_text">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+    
+    <style name="text_15_b0b0b0">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">#b0b0b0</item>
+    </style>
+    
+    <style name="text_13_999999">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">#999999</item>
+    </style>
+    
+    <style name="text_15_6e6e6e">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">#6e6e6e</item>
+    </style>
+    
+    <style name="text_12_dfdfdf">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#dfdfdf</item>
+    </style>
+    
+    <style name="text_12_6c7a82">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#6c7a82</item>
+    </style>
+    
+    <style name="text_10_c6c6c6">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">#c6c6c6</item>
+    </style>
+    
+    <style name="text_13_b0b1b1">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">#b0b1b1</item>
+    </style>
+    
+    <style name="text_12_a9a9a9">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#a9a9a9</item>
+    </style>
+    
+    <style name="text_13_c6c6c6">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">#c6c6c6</item>
+    </style>
+    
+    <style name="text_15_8c8c8c">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">#8c8c8c</item>
+    </style>
+    
+     <style name="text_15_80ccc5">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">#80ccc5</item>
+    </style>
+    
+      <style name="text_15_f51c4b">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">#f7799a</item>
+    </style>
+    
+      <style name="text_15_999999">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">#999999</item>
+    </style>
+
+    <style name="text_15_blue">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">#0330f7</item>
+    </style>
+
+    <style name="text_12_blue">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#0330f7</item>
+    </style>
+     
+      <style name="text_25_f51c4b">
+        <item name="android:textSize">25sp</item>
+        <item name="android:textColor">#f7799a</item>
+    </style>
+    
+    <style name="text_13_f51c4b">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">#f7799a</item>
+    </style>
+    
+    <style name="text_13_c5c8c8">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">#c5c8c8</item>
+    </style>
+
+     <style name="white_10_text">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+
+    <style name="white_12_text">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+    
+    <style name="white_13_text">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+    
+    <style name="white_20_text">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+    
+    <style name="gray_13_text">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">#8d8c8c</item>
+    </style>
+    
+    <style name="darkgray_13_text">
+        <item name="android:textSize">13sp</item>
+    	<item name="android:textColor">#a7a7a7</item>
+    </style>
+
+    <style name="red_13_text">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">#f4041f</item>
+    </style>
+
+    <style name="lightred_15_text">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">#ef5a6b</item>
+    </style>
+
+    <style name="lightred_13_text">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">#ef5a6b</item>
+    </style>
+    
+    <style name="darkgray_15_text">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">#b8b8b8</item>
+    </style>
+    
+    <style name="tab_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@drawable/selector_tabtext</item>
+    </style>
+    
+    <style name="title_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@drawable/selector_titletext</item>
+    </style>
+    
+    <style name="text_13_666666">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">#666666</item>
+    </style>
+    
+    <style name="text_13_f28790">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">#f28790</item>
+    </style>
+    
+    <style name="text_30_f28790">
+        <item name="android:textSize">30sp</item>
+        <item name="android:textColor">#f28790</item>
+    </style>
+    
+    <style name="text_10_808080">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">#808080</item>
+    </style>
+    
+    <style name="text_10_989898">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">#989898</item>
+    </style>
+    
+    <!-- line style -->
+
+    <style name="white_vertical_divider">
+        <item name="android:layout_width">1px</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:background">#ffffff</item>
+    </style>
+
+    <style name="gary_vertical_divider">
+        <item name="android:layout_width">1px</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:background">#ececec</item>
+    </style>
+
+    <style name="white_horizon_divider">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">1px</item>
+        <item name="android:background">#ffffff</item>
+    </style>
+
+    <style name="gray_horizon_divider">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">1px</item>
+        <item name="android:background">#f5f5f5</item>
+    </style>
+    
+    <style name="gray_horizon_divider2">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">1px</item>
+        <item name="android:background">#cccccc</item>
+    </style>
+    
+    <style name="horizon_divider">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">1px</item>
+        <item name="android:background">#fa9ca7</item>
+    </style>
+    
+    <style name="horizon_gray_divider">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">1px</item>
+        <item name="android:background">#ececec</item>
+    </style>
+
+    <!--趣拍UI-->
+    <!--<style name="AliyunVideoUIStytle" >-->
+        <!--<item name="qusnap_background_color">@color/color_bg</item> //背景主题色-->
+        <!--<item name="qusnap_tint_color">@color/themeColor</item> //录制进度条颜色-->
+        <!--<item name="qusnap_timeline_backgound_color">@color/qupai_line_gray_75</item> //录制进度条背景色-->
+        <!--<item name="qusnap_timeline_del_backgound_color">@color/black_deep</item> //录制删除进度颜色-->
+        <!--<item name="qusnap_back_icon">@mipmap/icon_back</item>-->
+        <!--<item name="qusnap_switch_light_icon">@drawable/snap_switch_light_selector</item>-->
+        <!--<item name="qusnap_switch_light_icon_disable">@mipmap/icon_light_dis</item>-->
+        <!--<item name="qusnap_switch_light_icon_visibility">visible</item>-->
+        <!--<item name="qusnap_switch_camera_icon">@drawable/snap_switch_camera</item>-->
+        <!--<item name="qusnap_switch_camera_icon_visibility">visible</item>-->
+        <!--<item name="qusnap_beauty_icon">@drawable/snap_switch_beauty</item>-->
+        <!--<item name="qusnap_beauty_icon_visibility">visible</item>-->
+        <!--<item name="qusnap_record_icon">@drawable/snap_record_state_selector</item>-->
+        <!--<item name="qusnap_delete_icon">@drawable/snap_icon_delete</item>-->
+        <!--<item name="qusnap_complete_icon">@drawable/snap_icon_complete</item>-->
+        <!--<item name="qusnap_gallery_icon">@mipmap/icon_default</item>-->
+        <!--<item name="qusnap_gallery_icon_visibility">visible</item>-->
+        <!--<item name="qusnap_time_txt_color">@android:color/white</item>-->
+        <!--<item name="qusnap_time_txt_size">15dp</item>-->
+        <!--<item name="qusnap_time_txt_visibility">visible</item>-->
+        <!--<item name="qusnap_time_line_pos_y">0dp</item>-->
+        <!--<item name="qusnap_crop_sweep_left">@mipmap/icon_sweep_left</item>-->
+        <!--<item name="qusnap_crop_sweep_right">@mipmap/icon_sweep_right</item>-->
+        <!--<item name="qusnap_crop_seek_frame">@mipmap/icon_frame</item>-->
+        <!--<item name="qusnap_crop_seek_padding_color">@android:color/holo_red_dark</item>-->
+        <!--<item name="qusnap_crop_icon_transform">@drawable/snap_transform_selector</item>-->
+        <!--<item name="qusnap_crop_icon_transform_visibility">visible</item>-->
+        <!--<item name="qusnap_crop_time_txt_color">@android:color/white</item>-->
+        <!--<item name="qusnap_crop_time_txt_size">15dp</item>-->
+        <!--<item name="qusnap_crop_txt_visibility">visible</item>-->
+    <!--</style>-->
+
+    
+</resources>

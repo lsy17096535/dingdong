@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bk_color"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#f0f7f6"
+        android:padding="10dp" >
+
+        <EditText
+            android:id="@+id/edit_contact_search"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/input_whiteradius_bk"
+            android:cursorVisible="true"
+            android:drawableLeft="@drawable/ic_search"
+            android:paddingBottom="7dp"
+            android:paddingLeft="14dp"
+            android:paddingTop="7dp"
+            style="@style/black_15_text"
+            android:textCursorDrawable="@drawable/cursor_bk" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/horizon_gray_divider" >
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <ListView
+                android:id="@+id/list_contact_main"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:divider="@null" >
+            </ListView>
+
+            <com.intexh.bidong.widgets.SideBar
+                android:id="@+id/sideBar_contact_sider"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:background="#00000000" />
+        </FrameLayout>
+    </RelativeLayout>
+
+    <!--
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+		
+        
+
+        <com.intexh.frd.widgets.SideBar
+            android:id="@+id/sideBar_contact_sider"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:background="#00000000" />
+    </FrameLayout>
+    -->
+
+</LinearLayout>

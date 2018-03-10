@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/main_bk_color" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/main_bk_color"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            style="@style/horizon_gray_divider"
+            android:layout_marginTop="10dp" >
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="14dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@color/layout_bg_color_white">
+
+            <ImageView
+                android:id="@+id/image_offservice_add_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_launcher" />
+
+            <TextView
+                android:id="@+id/txt_offservice_add_name"
+                style="@style/black_15_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="10dp"
+                android:text="按摩" />
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/horizon_gray_divider">
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="14dp"
+            android:paddingLeft="10dp"
+            android:paddingBottom="5dp">
+            <TextView
+                android:id="@+id/label_offservice_add_price"
+                style="@style/text_15_8c8c8c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="出场费" />
+
+            <TextView
+                android:id="@+id/label_offservice_add_price_remark"
+                style="@style/darkgray_13_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="（0金币表示免费）" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/horizon_gray_divider"></LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/layout_bg_color_white"
+            android:padding="10dp" >
+
+            <EditText
+                android:id="@+id/edit_offservice_add_price"
+                style="@style/black_15_text"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:background="@drawable/input_bk"
+                android:cursorVisible="true"
+                android:text="0"
+                android:textCursorDrawable="@drawable/cursor_bk"
+                android:inputType="number"
+                android:lines="1"
+                android:maxLength="5"/>
+
+            <TextView
+                android:id="@+id/txt_offservice_yuan"
+                style="@style/text_15_8c8c8c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/edit_offservice_add_price"
+                android:text=" 金币 /" />
+
+            <RadioGroup
+                android:id="@+id/radiogroup_offservice_add_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/txt_offservice_yuan"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/radio_offservice_add_hour"
+                    style="@style/radiobutton_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="小时"
+                />
+                <RadioButton
+                    android:id="@+id/radio_offservice_add_time"
+                    style="@style/radiobutton_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="次"
+                    />
+                <RadioButton
+                    android:id="@+id/radio_offservice_add_day"
+                    style="@style/radiobutton_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="天"
+                    />
+
+            </RadioGroup>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="14dp"
+            android:paddingLeft="10dp"
+            android:paddingBottom="5dp">
+            <TextView
+                android:id="@+id/label_offservice_add_week"
+                style="@style/text_15_8c8c8c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="空闲时间" />
+
+            <TextView
+                android:id="@+id/label_offservice_add_week_remark"
+                style="@style/darkgray_13_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="（可多选）" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/horizon_gray_divider"></LinearLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/layout_bg_color_white"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp">
+
+            <TableRow>
+                <CheckBox
+                    android:id="@+id/check_offservice_add_week1"
+                    style="@style/checkbox_block_style"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:text="周一" />
+
+                <CheckBox
+                    android:id="@+id/check_offservice_add_week2"
+                    style="@style/checkbox_block_style"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:text="周二" />
+
+                <CheckBox
+                    android:id="@+id/check_offservice_add_week3"
+                    style="@style/checkbox_block_style"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:text="周三" />
+
+                <CheckBox
+                    android:id="@+id/check_offservice_add_week4"
+                    style="@style/checkbox_block_style"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:text="周四" />
+            </TableRow>
+
+            <TableRow android:layout_marginTop="10dp">
+                <CheckBox
+                    android:id="@+id/check_offservice_add_week5"
+                    style="@style/checkbox_block_style"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:text="周五" />
+
+                <CheckBox
+                    android:id="@+id/check_offservice_add_week6"
+                    style="@style/checkbox_block_style"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:text="周六" />
+
+                <CheckBox
+                    android:id="@+id/check_offservice_add_week7"
+                    style="@style/checkbox_block_style"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:text="周日" />
+
+                <CheckBox
+                    android:id="@+id/check_offservice_add_week8"
+                    style="@style/checkbox_block_style"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:text="周八"
+                    android:visibility="invisible"/>
+
+            </TableRow>
+
+        </TableLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="14dp"
+            android:paddingLeft="10dp"
+            android:paddingBottom="5dp">
+            <TextView
+                android:id="@+id/label_offservice_add_descr"
+                style="@style/text_15_8c8c8c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="服务说明" />
+
+            <TextView
+                android:id="@+id/label_offservice_add_descr_remark"
+                style="@style/darkgray_13_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="（可多选）" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#ffffff"
+            >
+            <LinearLayout style="@style/horizon_gray_divider"></LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="14dp" >
+
+                <EditText
+                    android:id="@+id/edit_offservice_add_descr"
+                    style="@style/black_15_text"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@null"
+                    android:hint="@string/me_offservice_descr_hint"
+                    android:textColorHint="@color/hint_font_color"
+                    android:textCursorDrawable="@drawable/cursor_bk"
+                    android:maxLines="6"
+                    android:maxLength="128"/>
+            </RelativeLayout>
+
+            <LinearLayout style="@style/horizon_gray_divider"></LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            style="@style/red_13_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/me_offservice_prompt"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginTop="20dp"
+            />
+
+        <Button
+            android:id="@+id/btn_offservice_add_save"
+            style="@style/white_15_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/selector_chargebtn"
+            android:minWidth="100dp"
+            android:text="@string/common_publish" />
+
+    </LinearLayout>
+
+</ScrollView>

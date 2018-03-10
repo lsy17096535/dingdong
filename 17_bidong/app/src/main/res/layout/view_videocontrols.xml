@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/rel_videocontrols"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="0dp"
+    android:background="#cc000000">
+
+    <ImageButton
+        android:id="@+id/vcv_img_play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:padding="10dp"
+        android:background="@null"
+        android:src="@drawable/video_start" />
+
+    <ImageButton
+        android:id="@+id/vcv_img_fullscreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:padding="10dp"
+        android:background="@null"
+        android:visibility="gone"
+        android:src="@drawable/video_zoomin" />
+
+    <LinearLayout 
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:layout_toLeftOf="@+id/vcv_img_fullscreen"
+        android:layout_toRightOf="@+id/vcv_img_play"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
+        >
+        <SeekBar
+            android:id="@+id/vcv_seekbar"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:indeterminateDrawable="@drawable/fvl_progress"
+            android:maxHeight="13dp"
+            android:minHeight="13dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:progressDrawable="@drawable/fvl_progress"
+            android:thumb="@drawable/video_position"
+            android:thumbOffset="16dp" />
+        
+        <LinearLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="16dp"
+            >
+            <TextView
+                android:id="@+id/vcv_txt_elapsed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="00:00"
+                android:textColor="#ffffff" />
+            
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="/"
+                android:textColor="#666666" />
+
+            <TextView
+                android:id="@+id/vcv_txt_total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="00:00"
+                android:textColor="#666666" />
+        </LinearLayout>
+    </LinearLayout>
+    
+
+
+</RelativeLayout>

@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/main_bk_color" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/main_bk_color"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:orientation="vertical"
+            android:padding="10dp" >
+
+            <TextView
+                style="@style/black_15_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/account_myasserts" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:gravity="center"
+                android:orientation="horizontal" 
+                >
+
+                
+                <TextView
+                    android:id="@+id/txt_accountinfo_value"
+                    style="@style/text_25_f51c4b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+                
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_diamondsgift" />
+
+                <TextView
+                    android:id="@+id/txt_accountinfo_tip"
+                    style="@style/text_12_blue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:paddingBottom="6dp"
+                    android:text="(1金币=1元)" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="21dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/btn_accountinfo_charge"
+                    style="@style/white_15_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="33dp"
+                    android:background="@drawable/selector_chargebtn"
+                    android:minWidth="100dp"
+                    android:text="@string/common_charge" />
+
+                <Button
+                    android:id="@+id/btn_accountinfo_applycash"
+                    style="@style/white_15_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/selector_chargebtn_rev"
+                    android:minWidth="100dp"
+                    android:text="@string/common_applycash" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout style="@style/horizon_gray_divider" >
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/horizon_gray_divider"
+            android:layout_marginTop="24.5dp" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/layout_accountinfo_wechat"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:padding="14dp" >
+
+                <TextView
+                    style="@style/black_15_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/wechatwallet" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/txt_accountinfo_bindstatus"
+                        style="@style/text_13_999999"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/unbind" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/icon_arrow_grey" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                style="@style/horizon_gray_divider"
+                android:layout_marginLeft="14dp" >
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_accountinfo_chargerecords"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="14dp" >
+
+                <TextView
+                    style="@style/black_15_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/charge_records" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/icon_arrow_grey" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                style="@style/horizon_gray_divider"
+                android:layout_marginLeft="14dp" >
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_accountinfo_applyrecords"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="14dp" >
+
+                <TextView
+                    style="@style/black_15_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/applycash_records" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/icon_arrow_grey" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout style="@style/horizon_gray_divider" >
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/horizon_gray_divider"
+            android:layout_marginTop="10dp" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/layout_accountinfo_receivegifts"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="14dp" >
+
+                <TextView
+                    style="@style/black_15_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/receivegifts" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/icon_arrow_grey" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                style="@style/horizon_gray_divider"
+                android:layout_marginLeft="14dp" >
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_accountinfo_sendgifts"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="14dp" >
+
+                <TextView
+                    style="@style/black_15_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/sendgifts" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/icon_arrow_grey" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout style="@style/horizon_gray_divider" >
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

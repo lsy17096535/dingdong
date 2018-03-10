@@ -1,0 +1,9 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+	<dimen name="divider_height">1px</dimen>
+	<dimen name="divider_height_1dp">1dp</dimen>
+	<dimen name="spacing">10dp</dimen>
+	<dimen name="spacing2">5dp</dimen>
+	<dimen name="tab_top_fontsize">14sp</dimen>
+</resources>

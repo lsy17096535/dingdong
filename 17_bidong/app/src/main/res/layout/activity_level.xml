@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bk_color"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        style="@style/horizon_gray_divider"
+        android:layout_marginTop="14dp" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="14dp" >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+           	android:id="@+id/image_level_avatar"
+            android:layout_width="60dp"
+            android:layout_height="60dp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/txt_level_name"
+                style="@style/black_15_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                 />
+
+            <ImageView
+                android:id="@+id/image_level_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                 />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp" >
+
+                <TextView
+                    android:id="@+id/txt_level_level"
+                    style="@style/black_15_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                     />
+
+                <FrameLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/txt_level_level" >
+
+                    <com.intexh.bidong.widgets.ProgressLayout
+                        android:id="@+id/layout_level_progresscontainer"
+                        android:layout_width="fill_parent"
+                        android:layout_height="14dp"
+                        android:background="#d8d8d8"  />
+
+                    
+                    <TextView 
+                        android:id="@+id/txt_level_progress"
+                        android:layout_width="fill_parent"
+                        android:layout_height="14dp"
+                        android:text="0/0"
+                        style="@style/white_10_text"
+                        android:gravity="center"
+                        />
+                </FrameLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout style="@style/horizon_gray_divider" >
+    </LinearLayout>
+    
+    <LinearLayout style="@style/horizon_gray_divider" 
+        android:layout_marginTop="14dp">
+    </LinearLayout>
+    
+    <android.support.percent.PercentRelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="14dp"
+        android:paddingBottom="14dp"
+        android:background="#ef5e6b"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:id="@+id/txt_level_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+			style="@style/white_13_text"
+			android:gravity="center"
+			android:text="等级"
+            app:layout_widthPercent="30%"
+            />
+        
+        <TextView
+            android:id="@+id/txt_level_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+			style="@style/white_13_text"
+			android:gravity="center_vertical"
+			android:text="封号"
+            app:layout_widthPercent="30%"
+            android:layout_toRightOf="@id/txt_level_1"
+            />
+        
+        <TextView 
+            android:id="@+id/txt_level_tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+			style="@style/white_13_text"
+			android:gravity="center"
+			android:text="礼物累计值"
+            app:layout_widthPercent="40%"
+            android:layout_toRightOf="@id/txt_level_2"
+            />
+    </android.support.percent.PercentRelativeLayout>
+
+    <ListView 
+        android:id="@+id/list_level_main"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        ></ListView>
+    
+</LinearLayout>

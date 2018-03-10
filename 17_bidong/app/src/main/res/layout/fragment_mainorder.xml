@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bk_color"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <in.srain.cube.views.ptr.PtrClassicFrameLayout
+        xmlns:cube_ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/pull_mainorder_pull"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        cube_ptr:ptr_duration_to_close="200"
+        cube_ptr:ptr_duration_to_close_header="1000"
+        cube_ptr:ptr_keep_header_when_refresh="true"
+        cube_ptr:ptr_pull_to_fresh="true"
+        cube_ptr:ptr_ratio_of_header_height_to_refresh="1.2"
+        cube_ptr:ptr_resistance="1.7" >
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_mainorder_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </in.srain.cube.views.ptr.PtrClassicFrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_mainorder_empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/publish_order_bg"/>
+        <TextView
+            android:id="@+id/txt_mainorder_empty_tip"
+            style="@style/text_15_999999"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:visibility="gone"
+            android:text="向心动的人发起约单，开启心跳的线下互动" />
+        <TextView
+            android:id="@+id/txt_mainorder_empty_action"
+            style="@style/text_15_f51c4b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/publish_button"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="120dp"
+            android:gravity="center"/>
+    </RelativeLayout>
+
+
+</LinearLayout>

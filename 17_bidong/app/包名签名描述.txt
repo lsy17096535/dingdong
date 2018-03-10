@@ -1,0 +1,20 @@
+包名：com.intexh.bidong
+
+keystore 密码：bidong123
+keystore证书指纹:
+         MD5: 9A:BB:EF:C8:81:15:75:76:2B:08:22:F5:3B:81:FA:11
+         MD5小写： 9abbefc8811575762b0822f53b81fa11
+         SHA1: DF:F5:1C:B1:22:69:58:D1:E8:28:3F:36:2B:F5:4A:D1:E1:C9:A9:36
+         SHA256: C7:91:8A:CF:DF:33:55:63:59:FA:A0:D2:D3:EC:89:69:00:FE:B3:23:AB:CB:A6:96:FB:1A:F8:4F:DE:D0:3C:A6
+
+
+sharesdk
+AppKey ：22b4a74297cd4
+App Secret：f6a892d7eaf60e80801ecd36d4d6eba4
+
+qq APP ID  1106561244
+APP KEY FmjppK1ZpgzqBHVB
+
+微信分享
+AppID:wxb1b4649a668bcedc
+AppSecret:8cf73d4423e83ea8316408960375c3cb

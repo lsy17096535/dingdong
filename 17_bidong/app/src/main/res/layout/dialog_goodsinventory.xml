@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:padding="10dp"
+    android:background="#666666">
+    
+	
+	<DatePicker 
+	    android:id="@+id/datepicker_datepicker_date"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:calendarViewShown="false"
+    	android:datePickerMode="spinner"
+    	android:background="#666666"
+	    />
+	
+	
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+         >
+
+        <Button
+            android:id="@+id/btn_datepicker_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_weight="1.0"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/selector_login"
+            android:textColor="#ffffff"
+            android:text="@string/common_confirm" />
+
+        <Button
+            android:id="@+id/btn_datepicker_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_login_rev"
+            android:text="@string/common_cancel" />
+    </LinearLayout>
+    
+</LinearLayout>
+
+</LinearLayout>

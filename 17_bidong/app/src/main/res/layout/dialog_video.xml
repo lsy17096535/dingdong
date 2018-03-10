@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center">
+
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="30dp"
+    android:gravity="center"
+     >
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:background="@drawable/gift_dlg_bk"
+		android:gravity="center_horizontal"
+		android:padding="18dp"
+        >
+        <TextView 
+            android:id="@+id/txt_videodlg_receive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/white_15_text"
+            android:text="收到了xxx的礼物"
+            android:layout_marginTop="20dp"
+            />
+        
+        <de.hdodenhof.circleimageview.CircleImageView 
+            android:id="@+id/image_videodlg_icon"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginTop="20dp"
+            />
+        
+        
+        <LinearLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            >
+            <TextView
+                android:id="@+id/txt_videodlg_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/white_13_text"
+                android:text="10"
+                android:layout_marginRight="7dp"
+                />
+            <ImageView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_diamondsgift"
+                />
+        </LinearLayout>
+        
+        <Button 
+            android:id="@+id/btn_videodlg_confirm"
+            android:layout_width="fill_parent"
+            android:layout_height="36dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginTop="20dp"
+            style="@style/black_15_text"
+            android:text="@string/common_confirm"
+            android:background="@drawable/video_confirm"
+            android:visibility="gone"
+            />
+        <LinearLayout 
+            android:id="@+id/layout_videodlg_receive"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginTop="20dp"
+            >
+            <Button 
+            android:id="@+id/btn_videodlg_beggift"
+            android:layout_width="fill_parent"
+            android:layout_height="36dp"
+            style="@style/white_15_text"
+            android:text="@string/common_beggift"
+            android:background="@drawable/selector_login"
+            />
+            
+            <Button 
+            android:id="@+id/btn_videodlg_cancel"
+            android:layout_width="fill_parent"
+            android:layout_height="36dp"
+            style="@style/white_15_text"
+            android:layout_marginTop="15dp"
+            android:text="@string/common_cancel"
+            android:background="@drawable/selector_login_rev"
+            />
+        </LinearLayout>
+        
+    </LinearLayout>
+
+</LinearLayout>
+</LinearLayout>

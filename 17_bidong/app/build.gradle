@@ -1,0 +1,144 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion "25.0.1"
+    defaultConfig {
+        applicationId 'com.intexh.bidong'
+        minSdkVersion 15
+        targetSdkVersion 22
+        versionCode 1
+        versionName "v1.0"
+        multiDexEnabled true
+    }
+
+    //签名
+    signingConfigs {
+        debug {
+            storeFile file('bidong-release.jks')
+            storePassword 'bidong123'
+            keyAlias 'bidong'
+            keyPassword 'bidong123'
+        }
+        release {
+            storeFile file('bidong-release.jks')
+            storePassword 'bidong123'
+            keyAlias 'bidong'
+            keyPassword 'bidong123'
+        }
+    }
+    buildTypes {
+        release {
+            // 不显示Log
+            buildConfigField "boolean", "LOG_DEBUG", "false"
+            //混淆
+            minifyEnabled false
+            //Zipalign优化
+            zipAlignEnabled true
+            // 移除无用的resource文件
+            shrinkResources false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            //签名
+            signingConfig signingConfigs.release
+
+//            applicationVariants.all { variant ->
+//                variant.outputs.each { output ->
+//                    def outputFile = output.outputFile
+//                    def today = new Date().format('yyMMddHHmm');
+//                    if (outputFile != null && outputFile.name.endsWith('.apk')
+//                            && 'release'.equals(variant.buildType.name)) {
+//                        // 输出apk名称为ppstar_v1.0_150202_wandoujia.apk
+//                        def fileName = "suixing${variant.versionName}_${today}_${variant.flavorName}.apk"
+//                        output.outputFile = new File(outputFile.parent, fileName)
+//                    }
+//                }
+//            }
+        }
+    }
+    packagingOptions {
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/NOTICE'
+    }
+    dexOptions {
+        incremental true
+        javaMaxHeapSize "4g"
+    }
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+//    sourceSets {
+//        main{
+//            jni.srcDirs = ['libs']
+//        }
+//    }
+
+//    productFlavors {
+//        official {}
+//        xiaomi {}
+//        qh360 {}
+//        baidu {}
+//        wandoujia {}
+//        tencent {}
+//        huawei {}
+//        lenovo {}
+//        oppo {}
+//        anzhi {}
+//    }
+//
+//    productFlavors.all { flavor ->
+//        flavor.manifestPlaceholders = [UMENG_CHANNEL_VALUE: name]
+//    }
+}
+
+dependencies {
+    //    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:percent:22.2.0'
+    compile 'com.android.support:appcompat-v7:22.2.0'
+    provided 'com.nostra13.universalimageloader:universal-image-loader:1.9.4'
+    compile 'com.android.support:multidex:1.0.0'
+    compile 'org.greenrobot:eventbus:3.0.0'
+    compile files('libs/alipaySdk-20151112.jar')
+    compile files('libs/baidumapapi_base_v3_6_1.jar')
+    compile files('libs/baidumapapi_cloud_v3_6_1.jar')
+    compile files('libs/baidumapapi_map_v3_6_1.jar')
+    compile files('libs/baidumapapi_radar_v3_6_1.jar')
+    compile files('libs/baidumapapi_search_v3_6_1.jar')
+    compile files('libs/baidumapapi_util_v3_6_1.jar')
+    compile files('libs/easemobchat_2.2.6.jar')
+    compile files('libs/locSDK_6.13.jar')
+    compile files('libs/pinyin4j-2.5.0.jar')
+    compile files('libs/umeng-analytics-v5.6.4.jar')
+    compile files('libs/viewpagerindicator_v1.0.2.jar')
+    compile files('libs/libammsdk.jar')
+    compile files('libs/mediaservice-4.2.2.jar')
+    compile 'com.android.support:support-v13:22.2.0'
+    compile 'com.fasterxml.jackson.core:jackson-databind:2.6.4'
+    compile 'com.google.dagger:dagger-compiler:2.0.1'
+    compile 'com.google.dagger:dagger:2.0.1'
+    compile 'com.android.support:recyclerview-v7:22.2.0'
+    compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.4'
+    compile 'com.google.code.findbugs:jsr305:3.0.0'
+    compile 'com.squareup.okhttp3:okhttp:3.4.1'
+    compile 'com.lzy.net:okgo:3.0.4'
+    compile project(':android-ultra-pull-to-refresh')
+    compile project(':avloadingindicatorview')
+    compile project(':swipelayout')
+    compile project(':xutilslibrary')
+    compile project(':crop')
+    compile project(':swipebacklayout')
+    compile project(':multi-image-selector')
+    compile project(':citypicker')
+    compile project(':aliyunvideo')
+    compile files('libs/MobTools-2017.0412.1554.jar')
+    compile files('libs/MobCommons-2017.0412.1554.jar')
+    compile files('libs/ShareSDK-Core-2.8.3.jar')
+    compile files('libs/ShareSDK-Wechat-Core-2.8.3.jar')
+    compile files('libs/ShareSDK-Wechat-Moments-2.8.3.jar')
+    compile files('libs/ShareSDK-QQ-2.8.3.jar')
+    compile files('libs/ShareSDK-Wechat-2.8.3.jar')
+}

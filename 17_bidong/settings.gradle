@@ -1,0 +1,1 @@
+include ':app', ':xutilslibrary', ':swipelayout', ':android-ultra-pull-to-refresh', ':avloadingindicatorview', ':crop', ':swipebacklayout', ':multi-image-selector', ':citypicker', ':aliyunvideo', ':AliyunVideoSdk', ':AliyunView', ':STMobileJNI'

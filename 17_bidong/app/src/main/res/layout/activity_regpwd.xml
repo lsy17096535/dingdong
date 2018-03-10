@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bk_color"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#ffffff"
+        android:orientation="vertical" >
+
+        <LinearLayout style="@style/gray_horizon_divider" >
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/edit_regpwd_pwd"
+            style="@style/darkgray_15_text"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="12dp"
+            android:background="@null"
+            android:cursorVisible="true"
+            android:gravity="center_vertical"
+            android:hint="@string/password_hint"
+            android:password="true"
+            android:textColorHint="#b8b8b8"
+            android:textCursorDrawable="@drawable/cursor_bk" />
+
+        <LinearLayout style="@style/gray_horizon_divider" >
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/edit_regpwd_confirmpwd"
+            style="@style/darkgray_15_text"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="12dp"
+            android:layout_toLeftOf="@id/btn_reg_varify"
+            android:background="@null"
+            android:cursorVisible="true"
+            android:hint="@string/confirmpassword_hint"
+            android:password="true"
+            android:textColorHint="#b8b8b8"
+            android:textCursorDrawable="@drawable/cursor_bk" />
+
+        <LinearLayout style="@style/gray_horizon_divider" >
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_regpwd_next"
+        style="@style/white_15_text"
+        android:layout_width="fill_parent"
+        android:layout_height="44dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/selector_login"
+        android:gravity="center"
+        android:text="@string/reg_next" />
+
+</LinearLayout>

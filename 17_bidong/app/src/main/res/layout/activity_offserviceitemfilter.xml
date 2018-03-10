@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/layout_bg_color_white">
+
+    <LinearLayout style="@style/horizon_gray_divider" ></LinearLayout>
+
+    <GridView
+        android:id="@+id/gridview_yuema_items"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:numColumns="5"
+        android:verticalSpacing="3dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="@color/layout_bg_color_white"/>
+
+    <LinearLayout style="@style/horizon_gray_divider"></LinearLayout>
+</LinearLayout>
