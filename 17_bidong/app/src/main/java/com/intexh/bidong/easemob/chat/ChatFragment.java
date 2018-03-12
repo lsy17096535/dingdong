@@ -1,6 +1,7 @@
 package com.intexh.bidong.easemob.chat;
 
 import android.app.Activity;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.Bitmap.CompressFormat;
@@ -21,6 +22,7 @@ import com.easemob.easeui.ui.EaseChatFragment.EaseChatFragmentListener;
 import com.easemob.easeui.widget.chatrow.EaseChatRow;
 import com.easemob.easeui.widget.chatrow.EaseCustomChatRowProvider;
 import com.easemob.util.PathUtil;
+import com.intexh.bidong.gift.GiftSendDialog;
 import com.lidroid.xutils.exception.HttpException;
 import com.manteng.common.CommonAbstractDataManager.CommonNetworkCallback;
 import com.manteng.common.GsonUtils;
@@ -156,7 +158,8 @@ public class ChatFragment extends EaseChatFragment implements EaseChatFragmentLi
                 }
                 break;
             case REQUESTCODE_GIFT:{
-            	String ss = data.getStringExtra(GiftActivity.GIFT_ENTITY);
+                // TODO: 2018/3/12  跳转到礼物页面
+                String ss = data.getStringExtra(GiftActivity.GIFT_ENTITY);
             	FriendItemEntity friendEntity = FriendsManager.getInstance().getFrinedInfo(toChatUsername);
             	Intent intent = new Intent(getActivity(),GiftConfirmActivity.class);
             	intent.putExtra(GiftConfirmActivity.GIFT_ENTITY, ss);
@@ -165,9 +168,18 @@ public class ChatFragment extends EaseChatFragment implements EaseChatFragmentLi
             	break;
             }
             case REQUESTCODE_CONFIRM:{
+                //todo  点击礼物回来之后
             	String ss = data.getStringExtra(GiftConfirmActivity.GIFT_ENTITY);
             	final GiftItemEntity entity = GsonUtils.jsonToObj(ss, GiftItemEntity.class);
-            	sendTextMessage("送给你礼物[" + entity.getName() + entity.getPrice() +  "金币]");
+            	GiftSendDialog dialog = new GiftSendDialog(getActivity(),entity);
+            	dialog.setOnDismissListener(new DialogInterface.OnDismissListener() {
+                    @Override
+                    public void onDismiss(DialogInterface dialog) {
+                        sendTextMessage("送给你礼物[" + entity.getName() + entity.getPrice() +  "金币]");
+                    }
+                });
+            	dialog.show();
+
 //            	final FriendItemEntity friendEntity = FriendsManager.getInstance().getFrinedInfo(toChatUsername);
 //            	if(null != entity){
 //    				SendGiftRequest netRequest = new SendGiftRequest();
@@ -314,7 +326,7 @@ public class ChatFragment extends EaseChatFragment implements EaseChatFragmentLi
         case ITEM_VIDEO_CALL: //视频通话
             startVideoCall();
             break;
-        case ITEM_SENDGIFT:{
+        case ITEM_SENDGIFT:{  //发送礼物
         	GetCapitalRequest request = new GetCapitalRequest();
     		request.setUserid(UserUtils.getUserid());
     		request.setNetworkListener(new CommonNetworkCallback<Capital>() {
@@ -323,12 +335,9 @@ public class ChatFragment extends EaseChatFragment implements EaseChatFragmentLi
     			public void onSuccess(Capital data) {
     				hideLoading();
     				FriendItemEntity friendEntity = FriendsManager.getInstance().getFrinedInfo(toChatUsername);
-    				Intent intent = new Intent(getActivity(),
-    						GiftActivity.class);
-    				intent.putExtra(GiftActivity.CAPITAL_ENTITY,
-    						GsonUtils.objToJson(data));
-    				intent.putExtra(GiftActivity.SHOW_MODE,
-    						GiftGridAdapter.SHOWMODE_VALUE);
+    				Intent intent = new Intent(getActivity(), GiftActivity.class);
+    				intent.putExtra(GiftActivity.CAPITAL_ENTITY, GsonUtils.objToJson(data));
+    				intent.putExtra(GiftActivity.SHOW_MODE, GiftGridAdapter.SHOWMODE_VALUE);
     				if(1 == friendEntity.getFans().getGender()){
     					intent.putExtra(GiftActivity.GIFT_TIPS, R.string.addfriend_female_tips);
     				}else{

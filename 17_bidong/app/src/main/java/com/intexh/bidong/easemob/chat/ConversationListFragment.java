@@ -25,6 +25,7 @@ import com.intexh.bidong.R;
 import com.intexh.bidong.easemob.constants.Constant;
 import com.intexh.bidong.easemob.dao.InviteMessgeDao;
 import com.intexh.bidong.gift.GiftCheckUtils;
+import com.intexh.bidong.gift.GiftSendDialog;
 import com.intexh.bidong.gift.SendGiftRequest;
 import com.intexh.bidong.main.MainActivity;
 import com.intexh.bidong.main.square.GetCapitalRequest;
@@ -303,43 +304,56 @@ public class ConversationListFragment extends EaseConversationListFragment imple
         super.onActivityResult(request, result, arg2);
         if (result == RESULT_OK) {
             switch (request) {
-                case REQUEST_GIFT: {
+                case REQUEST_GIFT: {   //todo  点击礼物回调
                     String ss = arg2.getStringExtra(GiftActivity.GIFT_ENTITY);
-                    GiftItemEntity entity = GsonUtils.jsonToObj(ss, GiftItemEntity.class);
-                    SendGiftRequest netRequest = new SendGiftRequest();
-                    netRequest.setFrom_id(UserUtils.getUserid());
-                    netRequest.setGift_id(entity.getId());
-                    netRequest.setTo_id(friendEntity.getFans().getId());
-                    netRequest.setOrigin(1);
-                    netRequest.setValue(entity.getPrice());
-                    netRequest.setNetworkListener(new CommonNetworkCallback<SendGiftItemEntity>() {
-
-                        @Override
-                        public void onSuccess(SendGiftItemEntity data) {
-                            hideLoading();
-                            if(jumpToGiftType==2){
-                                //记录礼物赠送好友的日期 用于判断每天与好友聊天需要赠送一次礼物
-                                GiftCheckUtils.saveChatid(UserUtils.getHXUserid(friendEntity.getFans().getId()));
-                            }else{
-                                friendEntity.setOppo_status(-1);
-                                FriendsManager.getInstance().updateFriend(friendEntity);
-                                showToast("礼物发送成功，等待对方确认");
-                            }
-
-                        }
-
-                        @Override
-                        public void onFailed(int code, HttpException error, String reason) {
-                            hideLoading();
-                            showToast(reason);
-                        }
-                    });
-                    showLoading();
-                    netRequest.getDataFromServer();
+                    final GiftItemEntity entity = GsonUtils.jsonToObj(ss, GiftItemEntity.class);
+                    sendGift(entity);
+//                    GiftSendDialog sendDialog = new GiftSendDialog(getActivity(),entity);
+//                    sendDialog.setOnDismissListener(new DialogInterface.OnDismissListener() {
+//                        @Override
+//                        public void onDismiss(DialogInterface dialog) {
+//
+//                        }
+//                    });
                     break;
                 }
             }
         }
+    }
+
+    /**
+     *  发送礼物方法
+     */
+    private void sendGift( GiftItemEntity entity){
+        SendGiftRequest netRequest = new SendGiftRequest();
+        netRequest.setFrom_id(UserUtils.getUserid());
+        netRequest.setGift_id(entity.getId());
+        netRequest.setTo_id(friendEntity.getFans().getId());
+        netRequest.setOrigin(1);
+        netRequest.setValue(entity.getPrice());
+        netRequest.setNetworkListener(new CommonNetworkCallback<SendGiftItemEntity>() {
+            @Override
+            public void onSuccess(SendGiftItemEntity data) {
+                hideLoading();
+                if(jumpToGiftType==2){
+                    //记录礼物赠送好友的日期 用于判断每天与好友聊天需要赠送一次礼物
+                    GiftCheckUtils.saveChatid(UserUtils.getHXUserid(friendEntity.getFans().getId()));
+                }else{
+                    friendEntity.setOppo_status(-1);
+                    FriendsManager.getInstance().updateFriend(friendEntity);
+                    showToast("礼物发送成功，等待对方确认");
+                }
+
+            }
+
+            @Override
+            public void onFailed(int code, HttpException error, String reason) {
+                hideLoading();
+                showToast(reason);
+            }
+        });
+        showLoading();
+        netRequest.getDataFromServer();
     }
 
 }

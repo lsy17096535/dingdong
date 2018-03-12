@@ -1,30 +1,6 @@
 [
     {
-        "outputFile": "E:\\AndroidProject\\17_bidong\\AliyunView\\build\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-w720dp-v13\\values-w720dp-v13.xml",
-        "map": [
-            {
-                "to": {
-                    "startLine": 2,
-                    "startColumn": 4,
-                    "startOffset": 55,
-                    "endColumn": 76,
-                    "endOffset": 127
-                },
-                "from": {
-                    "file": "C:\\Users\\Frank\\.android\\build-cache\\780e0435959b1ed81c557485242c7cdd5862e5eb\\output\\res\\values-w720dp\\values-w720dp.xml",
-                    "position": {
-                        "startLine": 4,
-                        "startColumn": 4,
-                        "startOffset": 293,
-                        "endColumn": 76,
-                        "endOffset": 365
-                    }
-                }
-            }
-        ]
-    },
-    {
-        "outputFile": "F:\\bidong\\17_bidong\\AliyunView\\build\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-w720dp-v13\\values-w720dp-v13.xml",
+        "outputFile": "F:\\project_dingdong\\dingdong\\17_bidong\\AliyunView\\build\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-w720dp-v13\\values-w720dp-v13.xml",
         "map": [
             {
                 "to": {

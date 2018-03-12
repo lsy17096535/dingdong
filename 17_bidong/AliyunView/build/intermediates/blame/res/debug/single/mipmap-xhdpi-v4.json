@@ -1,95 +1,51 @@
 [
     {
-        "merged": "F:\\bidong\\17_bidong\\AliyunView\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4\\icon_alter_select.png",
-        "source": "F:\\bidong\\17_bidong\\AliyunView\\src\\main\\res\\mipmap-xhdpi\\icon_alter_select.png"
+        "merged": "F:\\project_dingdong\\dingdong\\17_bidong\\AliyunView\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4\\icon_lb.png",
+        "source": "F:\\project_dingdong\\dingdong\\17_bidong\\AliyunView\\src\\main\\res\\mipmap-xhdpi\\icon_lb.png"
     },
     {
-        "merged": "F:\\bidong\\17_bidong\\AliyunView\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4\\icon_record_press.png",
-        "source": "F:\\bidong\\17_bidong\\AliyunView\\src\\main\\res\\mipmap-xhdpi\\icon_record_press.png"
-    },
-    {
-        "merged": "E:\\AndroidProject\\17_bidong\\AliyunView\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4\\icon_record_press.png",
-        "source": "E:\\AndroidProject\\17_bidong\\AliyunView\\src\\main\\res\\mipmap-xhdpi\\icon_record_press.png"
-    },
-    {
-        "merged": "F:\\bidong\\17_bidong\\AliyunView\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4\\icon_delete.png",
-        "source": "F:\\bidong\\17_bidong\\AliyunView\\src\\main\\res\\mipmap-xhdpi\\icon_delete.png"
-    },
-    {
-        "merged": "E:\\AndroidProject\\17_bidong\\AliyunView\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4\\icon_record_normal.png",
-        "source": "E:\\AndroidProject\\17_bidong\\AliyunView\\src\\main\\res\\mipmap-xhdpi\\icon_record_normal.png"
-    },
-    {
-        "merged": "E:\\AndroidProject\\17_bidong\\AliyunView\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4\\icon_alter_select.png",
-        "source": "E:\\AndroidProject\\17_bidong\\AliyunView\\src\\main\\res\\mipmap-xhdpi\\icon_alter_select.png"
-    },
-    {
-        "merged": "F:\\bidong\\17_bidong\\AliyunView\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4\\icon_sweep_left.png",
-        "source": "F:\\bidong\\17_bidong\\AliyunView\\src\\main\\res\\mipmap-xhdpi\\icon_sweep_left.png"
-    },
-    {
-        "merged": "E:\\AndroidProject\\17_bidong\\AliyunView\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4\\icon_ps.png",
-        "source": "E:\\AndroidProject\\17_bidong\\AliyunView\\src\\main\\res\\mipmap-xhdpi\\icon_ps.png"
-    },
-    {
-        "merged": "F:\\bidong\\17_bidong\\AliyunView\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4\\icon_beauty_select.png",
-        "source": "F:\\bidong\\17_bidong\\AliyunView\\src\\main\\res\\mipmap-xhdpi\\icon_beauty_select.png"
-    },
-    {
-        "merged": "F:\\bidong\\17_bidong\\AliyunView\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4\\icon_default.png",
-        "source": "F:\\bidong\\17_bidong\\AliyunView\\src\\main\\res\\mipmap-xhdpi\\icon_default.png"
-    },
-    {
-        "merged": "E:\\AndroidProject\\17_bidong\\AliyunView\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4\\icon_frame.png",
-        "source": "E:\\AndroidProject\\17_bidong\\AliyunView\\src\\main\\res\\mipmap-xhdpi\\icon_frame.png"
-    },
-    {
-        "merged": "E:\\AndroidProject\\17_bidong\\AliyunView\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4\\icon_record_pause.png",
-        "source": "E:\\AndroidProject\\17_bidong\\AliyunView\\src\\main\\res\\mipmap-xhdpi\\icon_record_pause.png"
-    },
-    {
-        "merged": "F:\\bidong\\17_bidong\\AliyunView\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4\\icon_lb.png",
-        "source": "F:\\bidong\\17_bidong\\AliyunView\\src\\main\\res\\mipmap-xhdpi\\icon_lb.png"
-    },
-    {
-        "merged": "F:\\bidong\\17_bidong\\AliyunView\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4\\icon_record_pause.png",
-        "source": "F:\\bidong\\17_bidong\\AliyunView\\src\\main\\res\\mipmap-xhdpi\\icon_record_pause.png"
+        "merged": "F:\\project_dingdong\\dingdong\\17_bidong\\AliyunView\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4\\icon_ps.png",
+        "source": "F:\\project_dingdong\\dingdong\\17_bidong\\AliyunView\\src\\main\\res\\mipmap-xhdpi\\icon_ps.png"
     },
     {
         "merged": "F:\\project_dingdong\\dingdong\\17_bidong\\AliyunView\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4\\icon_delete_dis.png",
         "source": "F:\\project_dingdong\\dingdong\\17_bidong\\AliyunView\\src\\main\\res\\mipmap-xhdpi\\icon_delete_dis.png"
     },
     {
+        "merged": "F:\\project_dingdong\\dingdong\\17_bidong\\AliyunView\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4\\icon_complete_select.png",
+        "source": "F:\\project_dingdong\\dingdong\\17_bidong\\AliyunView\\src\\main\\res\\mipmap-xhdpi\\icon_complete_select.png"
+    },
+    {
+        "merged": "F:\\project_dingdong\\dingdong\\17_bidong\\AliyunView\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4\\icon_beauty_select.png",
+        "source": "F:\\project_dingdong\\dingdong\\17_bidong\\AliyunView\\src\\main\\res\\mipmap-xhdpi\\icon_beauty_select.png"
+    },
+    {
         "merged": "F:\\project_dingdong\\dingdong\\17_bidong\\AliyunView\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4\\icon_frame.png",
         "source": "F:\\project_dingdong\\dingdong\\17_bidong\\AliyunView\\src\\main\\res\\mipmap-xhdpi\\icon_frame.png"
-    },
-    {
-        "merged": "F:\\bidong\\17_bidong\\AliyunView\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4\\icon_complete.png",
-        "source": "F:\\bidong\\17_bidong\\AliyunView\\src\\main\\res\\mipmap-xhdpi\\icon_complete.png"
-    },
-    {
-        "merged": "E:\\AndroidProject\\17_bidong\\AliyunView\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4\\icon_confirm.png",
-        "source": "E:\\AndroidProject\\17_bidong\\AliyunView\\src\\main\\res\\mipmap-xhdpi\\icon_confirm.png"
-    },
-    {
-        "merged": "E:\\AndroidProject\\17_bidong\\AliyunView\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4\\icon_lb.png",
-        "source": "E:\\AndroidProject\\17_bidong\\AliyunView\\src\\main\\res\\mipmap-xhdpi\\icon_lb.png"
     },
     {
         "merged": "F:\\project_dingdong\\dingdong\\17_bidong\\AliyunView\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4\\icon_delete.png",
         "source": "F:\\project_dingdong\\dingdong\\17_bidong\\AliyunView\\src\\main\\res\\mipmap-xhdpi\\icon_delete.png"
     },
     {
-        "merged": "F:\\bidong\\17_bidong\\AliyunView\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4\\icon_light_dis.png",
-        "source": "F:\\bidong\\17_bidong\\AliyunView\\src\\main\\res\\mipmap-xhdpi\\icon_light_dis.png"
-    },
-    {
         "merged": "F:\\project_dingdong\\dingdong\\17_bidong\\AliyunView\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4\\icon_record_press.png",
         "source": "F:\\project_dingdong\\dingdong\\17_bidong\\AliyunView\\src\\main\\res\\mipmap-xhdpi\\icon_record_press.png"
     },
     {
-        "merged": "E:\\AndroidProject\\17_bidong\\AliyunView\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4\\icon_beauty_select.png",
-        "source": "E:\\AndroidProject\\17_bidong\\AliyunView\\src\\main\\res\\mipmap-xhdpi\\icon_beauty_select.png"
+        "merged": "F:\\project_dingdong\\dingdong\\17_bidong\\AliyunView\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4\\icon_light_off.png",
+        "source": "F:\\project_dingdong\\dingdong\\17_bidong\\AliyunView\\src\\main\\res\\mipmap-xhdpi\\icon_light_off.png"
+    },
+    {
+        "merged": "F:\\project_dingdong\\dingdong\\17_bidong\\AliyunView\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4\\icon_record_normal.png",
+        "source": "F:\\project_dingdong\\dingdong\\17_bidong\\AliyunView\\src\\main\\res\\mipmap-xhdpi\\icon_record_normal.png"
+    },
+    {
+        "merged": "F:\\project_dingdong\\dingdong\\17_bidong\\AliyunView\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4\\icon_confirm.png",
+        "source": "F:\\project_dingdong\\dingdong\\17_bidong\\AliyunView\\src\\main\\res\\mipmap-xhdpi\\icon_confirm.png"
+    },
+    {
+        "merged": "F:\\project_dingdong\\dingdong\\17_bidong\\AliyunView\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4\\icon_beauty_dis.png",
+        "source": "F:\\project_dingdong\\dingdong\\17_bidong\\AliyunView\\src\\main\\res\\mipmap-xhdpi\\icon_beauty_dis.png"
     },
     {
         "merged": "F:\\project_dingdong\\dingdong\\17_bidong\\AliyunView\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4\\icon_sweep_right.png",
@@ -104,20 +60,12 @@
         "source": "F:\\project_dingdong\\dingdong\\17_bidong\\AliyunView\\src\\main\\res\\mipmap-xhdpi\\icon_alter_dis.png"
     },
     {
-        "merged": "F:\\bidong\\17_bidong\\AliyunView\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4\\icon_alter_dis.png",
-        "source": "F:\\bidong\\17_bidong\\AliyunView\\src\\main\\res\\mipmap-xhdpi\\icon_alter_dis.png"
+        "merged": "F:\\project_dingdong\\dingdong\\17_bidong\\AliyunView\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4\\icon_alter.png",
+        "source": "F:\\project_dingdong\\dingdong\\17_bidong\\AliyunView\\src\\main\\res\\mipmap-xhdpi\\icon_alter.png"
     },
     {
-        "merged": "F:\\bidong\\17_bidong\\AliyunView\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4\\icon_record_normal.png",
-        "source": "F:\\bidong\\17_bidong\\AliyunView\\src\\main\\res\\mipmap-xhdpi\\icon_record_normal.png"
-    },
-    {
-        "merged": "E:\\AndroidProject\\17_bidong\\AliyunView\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4\\icon_beauty_dis.png",
-        "source": "E:\\AndroidProject\\17_bidong\\AliyunView\\src\\main\\res\\mipmap-xhdpi\\icon_beauty_dis.png"
-    },
-    {
-        "merged": "E:\\AndroidProject\\17_bidong\\AliyunView\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4\\icon_alter.png",
-        "source": "E:\\AndroidProject\\17_bidong\\AliyunView\\src\\main\\res\\mipmap-xhdpi\\icon_alter.png"
+        "merged": "F:\\project_dingdong\\dingdong\\17_bidong\\AliyunView\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4\\icon_light_dis.png",
+        "source": "F:\\project_dingdong\\dingdong\\17_bidong\\AliyunView\\src\\main\\res\\mipmap-xhdpi\\icon_light_dis.png"
     },
     {
         "merged": "F:\\project_dingdong\\dingdong\\17_bidong\\AliyunView\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4\\icon_back.png",
@@ -128,204 +76,32 @@
         "source": "F:\\project_dingdong\\dingdong\\17_bidong\\AliyunView\\src\\main\\res\\mipmap-xhdpi\\icon_record_pause.png"
     },
     {
-        "merged": "E:\\AndroidProject\\17_bidong\\AliyunView\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4\\icon_light_auto.png",
-        "source": "E:\\AndroidProject\\17_bidong\\AliyunView\\src\\main\\res\\mipmap-xhdpi\\icon_light_auto.png"
+        "merged": "F:\\project_dingdong\\dingdong\\17_bidong\\AliyunView\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4\\icon_beauty.png",
+        "source": "F:\\project_dingdong\\dingdong\\17_bidong\\AliyunView\\src\\main\\res\\mipmap-xhdpi\\icon_beauty.png"
     },
     {
         "merged": "F:\\project_dingdong\\dingdong\\17_bidong\\AliyunView\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4\\icon_light_on.png",
         "source": "F:\\project_dingdong\\dingdong\\17_bidong\\AliyunView\\src\\main\\res\\mipmap-xhdpi\\icon_light_on.png"
     },
     {
-        "merged": "E:\\AndroidProject\\17_bidong\\AliyunView\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4\\icon_sweep_right.png",
-        "source": "E:\\AndroidProject\\17_bidong\\AliyunView\\src\\main\\res\\mipmap-xhdpi\\icon_sweep_right.png"
-    },
-    {
-        "merged": "F:\\bidong\\17_bidong\\AliyunView\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4\\icon_confirm.png",
-        "source": "F:\\bidong\\17_bidong\\AliyunView\\src\\main\\res\\mipmap-xhdpi\\icon_confirm.png"
-    },
-    {
-        "merged": "F:\\bidong\\17_bidong\\AliyunView\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4\\icon_complete_select.png",
-        "source": "F:\\bidong\\17_bidong\\AliyunView\\src\\main\\res\\mipmap-xhdpi\\icon_complete_select.png"
+        "merged": "F:\\project_dingdong\\dingdong\\17_bidong\\AliyunView\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4\\icon_delete_select.png",
+        "source": "F:\\project_dingdong\\dingdong\\17_bidong\\AliyunView\\src\\main\\res\\mipmap-xhdpi\\icon_delete_select.png"
     },
     {
         "merged": "F:\\project_dingdong\\dingdong\\17_bidong\\AliyunView\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4\\icon_default.png",
         "source": "F:\\project_dingdong\\dingdong\\17_bidong\\AliyunView\\src\\main\\res\\mipmap-xhdpi\\icon_default.png"
     },
     {
-        "merged": "E:\\AndroidProject\\17_bidong\\AliyunView\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4\\icon_delete.png",
-        "source": "E:\\AndroidProject\\17_bidong\\AliyunView\\src\\main\\res\\mipmap-xhdpi\\icon_delete.png"
-    },
-    {
-        "merged": "E:\\AndroidProject\\17_bidong\\AliyunView\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4\\icon_alter_dis.png",
-        "source": "E:\\AndroidProject\\17_bidong\\AliyunView\\src\\main\\res\\mipmap-xhdpi\\icon_alter_dis.png"
-    },
-    {
-        "merged": "E:\\AndroidProject\\17_bidong\\AliyunView\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4\\icon_complete.png",
-        "source": "E:\\AndroidProject\\17_bidong\\AliyunView\\src\\main\\res\\mipmap-xhdpi\\icon_complete.png"
-    },
-    {
-        "merged": "F:\\project_dingdong\\dingdong\\17_bidong\\AliyunView\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4\\icon_sweep_left.png",
-        "source": "F:\\project_dingdong\\dingdong\\17_bidong\\AliyunView\\src\\main\\res\\mipmap-xhdpi\\icon_sweep_left.png"
-    },
-    {
-        "merged": "E:\\AndroidProject\\17_bidong\\AliyunView\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4\\icon_default.png",
-        "source": "E:\\AndroidProject\\17_bidong\\AliyunView\\src\\main\\res\\mipmap-xhdpi\\icon_default.png"
-    },
-    {
-        "merged": "F:\\project_dingdong\\dingdong\\17_bidong\\AliyunView\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4\\icon_lb.png",
-        "source": "F:\\project_dingdong\\dingdong\\17_bidong\\AliyunView\\src\\main\\res\\mipmap-xhdpi\\icon_lb.png"
-    },
-    {
-        "merged": "F:\\bidong\\17_bidong\\AliyunView\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4\\icon_light_auto.png",
-        "source": "F:\\bidong\\17_bidong\\AliyunView\\src\\main\\res\\mipmap-xhdpi\\icon_light_auto.png"
-    },
-    {
-        "merged": "E:\\AndroidProject\\17_bidong\\AliyunView\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4\\icon_light_off.png",
-        "source": "E:\\AndroidProject\\17_bidong\\AliyunView\\src\\main\\res\\mipmap-xhdpi\\icon_light_off.png"
-    },
-    {
-        "merged": "F:\\bidong\\17_bidong\\AliyunView\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4\\icon_sweep_right.png",
-        "source": "F:\\bidong\\17_bidong\\AliyunView\\src\\main\\res\\mipmap-xhdpi\\icon_sweep_right.png"
-    },
-    {
-        "merged": "F:\\bidong\\17_bidong\\AliyunView\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4\\icon_beauty_dis.png",
-        "source": "F:\\bidong\\17_bidong\\AliyunView\\src\\main\\res\\mipmap-xhdpi\\icon_beauty_dis.png"
-    },
-    {
-        "merged": "F:\\project_dingdong\\dingdong\\17_bidong\\AliyunView\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4\\icon_ps.png",
-        "source": "F:\\project_dingdong\\dingdong\\17_bidong\\AliyunView\\src\\main\\res\\mipmap-xhdpi\\icon_ps.png"
-    },
-    {
-        "merged": "E:\\AndroidProject\\17_bidong\\AliyunView\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4\\icon_beauty.png",
-        "source": "E:\\AndroidProject\\17_bidong\\AliyunView\\src\\main\\res\\mipmap-xhdpi\\icon_beauty.png"
-    },
-    {
-        "merged": "E:\\AndroidProject\\17_bidong\\AliyunView\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4\\icon_back.png",
-        "source": "E:\\AndroidProject\\17_bidong\\AliyunView\\src\\main\\res\\mipmap-xhdpi\\icon_back.png"
-    },
-    {
-        "merged": "E:\\AndroidProject\\17_bidong\\AliyunView\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4\\icon_light_on.png",
-        "source": "E:\\AndroidProject\\17_bidong\\AliyunView\\src\\main\\res\\mipmap-xhdpi\\icon_light_on.png"
-    },
-    {
-        "merged": "F:\\bidong\\17_bidong\\AliyunView\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4\\icon_back.png",
-        "source": "F:\\bidong\\17_bidong\\AliyunView\\src\\main\\res\\mipmap-xhdpi\\icon_back.png"
-    },
-    {
-        "merged": "F:\\bidong\\17_bidong\\AliyunView\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4\\icon_delete_select.png",
-        "source": "F:\\bidong\\17_bidong\\AliyunView\\src\\main\\res\\mipmap-xhdpi\\icon_delete_select.png"
-    },
-    {
-        "merged": "F:\\project_dingdong\\dingdong\\17_bidong\\AliyunView\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4\\icon_complete_select.png",
-        "source": "F:\\project_dingdong\\dingdong\\17_bidong\\AliyunView\\src\\main\\res\\mipmap-xhdpi\\icon_complete_select.png"
-    },
-    {
-        "merged": "E:\\AndroidProject\\17_bidong\\AliyunView\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4\\icon_light.png",
-        "source": "E:\\AndroidProject\\17_bidong\\AliyunView\\src\\main\\res\\mipmap-xhdpi\\icon_light.png"
-    },
-    {
-        "merged": "F:\\project_dingdong\\dingdong\\17_bidong\\AliyunView\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4\\icon_beauty_select.png",
-        "source": "F:\\project_dingdong\\dingdong\\17_bidong\\AliyunView\\src\\main\\res\\mipmap-xhdpi\\icon_beauty_select.png"
-    },
-    {
-        "merged": "F:\\bidong\\17_bidong\\AliyunView\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4\\icon_frame.png",
-        "source": "F:\\bidong\\17_bidong\\AliyunView\\src\\main\\res\\mipmap-xhdpi\\icon_frame.png"
-    },
-    {
-        "merged": "F:\\project_dingdong\\dingdong\\17_bidong\\AliyunView\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4\\icon_light_off.png",
-        "source": "F:\\project_dingdong\\dingdong\\17_bidong\\AliyunView\\src\\main\\res\\mipmap-xhdpi\\icon_light_off.png"
-    },
-    {
-        "merged": "F:\\project_dingdong\\dingdong\\17_bidong\\AliyunView\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4\\icon_beauty_dis.png",
-        "source": "F:\\project_dingdong\\dingdong\\17_bidong\\AliyunView\\src\\main\\res\\mipmap-xhdpi\\icon_beauty_dis.png"
-    },
-    {
-        "merged": "F:\\project_dingdong\\dingdong\\17_bidong\\AliyunView\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4\\icon_confirm.png",
-        "source": "F:\\project_dingdong\\dingdong\\17_bidong\\AliyunView\\src\\main\\res\\mipmap-xhdpi\\icon_confirm.png"
-    },
-    {
-        "merged": "F:\\project_dingdong\\dingdong\\17_bidong\\AliyunView\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4\\icon_record_normal.png",
-        "source": "F:\\project_dingdong\\dingdong\\17_bidong\\AliyunView\\src\\main\\res\\mipmap-xhdpi\\icon_record_normal.png"
-    },
-    {
-        "merged": "F:\\bidong\\17_bidong\\AliyunView\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4\\icon_light_on.png",
-        "source": "F:\\bidong\\17_bidong\\AliyunView\\src\\main\\res\\mipmap-xhdpi\\icon_light_on.png"
-    },
-    {
-        "merged": "F:\\bidong\\17_bidong\\AliyunView\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4\\icon_alter.png",
-        "source": "F:\\bidong\\17_bidong\\AliyunView\\src\\main\\res\\mipmap-xhdpi\\icon_alter.png"
-    },
-    {
-        "merged": "F:\\project_dingdong\\dingdong\\17_bidong\\AliyunView\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4\\icon_alter.png",
-        "source": "F:\\project_dingdong\\dingdong\\17_bidong\\AliyunView\\src\\main\\res\\mipmap-xhdpi\\icon_alter.png"
-    },
-    {
-        "merged": "F:\\bidong\\17_bidong\\AliyunView\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4\\icon_light_off.png",
-        "source": "F:\\bidong\\17_bidong\\AliyunView\\src\\main\\res\\mipmap-xhdpi\\icon_light_off.png"
-    },
-    {
-        "merged": "F:\\bidong\\17_bidong\\AliyunView\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4\\icon_delete_dis.png",
-        "source": "F:\\bidong\\17_bidong\\AliyunView\\src\\main\\res\\mipmap-xhdpi\\icon_delete_dis.png"
-    },
-    {
-        "merged": "F:\\project_dingdong\\dingdong\\17_bidong\\AliyunView\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4\\icon_light_dis.png",
-        "source": "F:\\project_dingdong\\dingdong\\17_bidong\\AliyunView\\src\\main\\res\\mipmap-xhdpi\\icon_light_dis.png"
-    },
-    {
-        "merged": "F:\\project_dingdong\\dingdong\\17_bidong\\AliyunView\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4\\icon_beauty.png",
-        "source": "F:\\project_dingdong\\dingdong\\17_bidong\\AliyunView\\src\\main\\res\\mipmap-xhdpi\\icon_beauty.png"
-    },
-    {
-        "merged": "E:\\AndroidProject\\17_bidong\\AliyunView\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4\\icon_sweep_left.png",
-        "source": "E:\\AndroidProject\\17_bidong\\AliyunView\\src\\main\\res\\mipmap-xhdpi\\icon_sweep_left.png"
-    },
-    {
-        "merged": "F:\\bidong\\17_bidong\\AliyunView\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4\\icon_light.png",
-        "source": "F:\\bidong\\17_bidong\\AliyunView\\src\\main\\res\\mipmap-xhdpi\\icon_light.png"
-    },
-    {
-        "merged": "E:\\AndroidProject\\17_bidong\\AliyunView\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4\\icon_light_dis.png",
-        "source": "E:\\AndroidProject\\17_bidong\\AliyunView\\src\\main\\res\\mipmap-xhdpi\\icon_light_dis.png"
-    },
-    {
-        "merged": "E:\\AndroidProject\\17_bidong\\AliyunView\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4\\icon_complete_dis.png",
-        "source": "E:\\AndroidProject\\17_bidong\\AliyunView\\src\\main\\res\\mipmap-xhdpi\\icon_complete_dis.png"
-    },
-    {
-        "merged": "F:\\project_dingdong\\dingdong\\17_bidong\\AliyunView\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4\\icon_delete_select.png",
-        "source": "F:\\project_dingdong\\dingdong\\17_bidong\\AliyunView\\src\\main\\res\\mipmap-xhdpi\\icon_delete_select.png"
-    },
-    {
-        "merged": "E:\\AndroidProject\\17_bidong\\AliyunView\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4\\icon_delete_select.png",
-        "source": "E:\\AndroidProject\\17_bidong\\AliyunView\\src\\main\\res\\mipmap-xhdpi\\icon_delete_select.png"
-    },
-    {
-        "merged": "E:\\AndroidProject\\17_bidong\\AliyunView\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4\\icon_complete_select.png",
-        "source": "E:\\AndroidProject\\17_bidong\\AliyunView\\src\\main\\res\\mipmap-xhdpi\\icon_complete_select.png"
-    },
-    {
         "merged": "F:\\project_dingdong\\dingdong\\17_bidong\\AliyunView\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4\\icon_light.png",
         "source": "F:\\project_dingdong\\dingdong\\17_bidong\\AliyunView\\src\\main\\res\\mipmap-xhdpi\\icon_light.png"
-    },
-    {
-        "merged": "F:\\bidong\\17_bidong\\AliyunView\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4\\icon_beauty.png",
-        "source": "F:\\bidong\\17_bidong\\AliyunView\\src\\main\\res\\mipmap-xhdpi\\icon_beauty.png"
-    },
-    {
-        "merged": "F:\\bidong\\17_bidong\\AliyunView\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4\\icon_ps.png",
-        "source": "F:\\bidong\\17_bidong\\AliyunView\\src\\main\\res\\mipmap-xhdpi\\icon_ps.png"
     },
     {
         "merged": "F:\\project_dingdong\\dingdong\\17_bidong\\AliyunView\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4\\icon_light_auto.png",
         "source": "F:\\project_dingdong\\dingdong\\17_bidong\\AliyunView\\src\\main\\res\\mipmap-xhdpi\\icon_light_auto.png"
     },
     {
-        "merged": "E:\\AndroidProject\\17_bidong\\AliyunView\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4\\icon_delete_dis.png",
-        "source": "E:\\AndroidProject\\17_bidong\\AliyunView\\src\\main\\res\\mipmap-xhdpi\\icon_delete_dis.png"
-    },
-    {
-        "merged": "F:\\bidong\\17_bidong\\AliyunView\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4\\icon_complete_dis.png",
-        "source": "F:\\bidong\\17_bidong\\AliyunView\\src\\main\\res\\mipmap-xhdpi\\icon_complete_dis.png"
+        "merged": "F:\\project_dingdong\\dingdong\\17_bidong\\AliyunView\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4\\icon_sweep_left.png",
+        "source": "F:\\project_dingdong\\dingdong\\17_bidong\\AliyunView\\src\\main\\res\\mipmap-xhdpi\\icon_sweep_left.png"
     },
     {
         "merged": "F:\\project_dingdong\\dingdong\\17_bidong\\AliyunView\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4\\icon_alter_select.png",

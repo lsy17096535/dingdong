@@ -32,9 +32,10 @@ import java.util.List;
 public class CameraHelper implements PreviewCallback {
     private static final String TAG = "CameraHelper";
 
-    static final int mwidth = 640;
-    static final int mheight = 480;
-
+    static final int mwidth = 640;  //  640
+    static final int mheight = 480; //  480
+    static final int mRate = 30;
+    static final int bitram= 500;
     private Camera mCamera;
     private int camera_count;
 
@@ -119,8 +120,11 @@ public class CameraHelper implements PreviewCallback {
             for (Camera.Size size : supportedPreviewSizes) {
                 Log.e("frank", "PreView width: " + size.width + ",height: " + size.height);
             }
+            if (supportedPreviewSizes.contains(Parameters.FOCUS_MODE_AUTO)){// 设置自动聚焦
+                mParameters.setFocusMode(Parameters.FOCUS_MODE_CONTINUOUS_VIDEO);
+            }
             mParameters.setPreviewSize(mwidth, mheight);
-            mParameters.setPreviewFrameRate(15);
+            mParameters.setPreviewFrameRate(mRate);
             mCamera.setParameters(mParameters);
             int mformat = mParameters.getPreviewFormat();
             int bitsperpixel = ImageFormat.getBitsPerPixel(mformat);
@@ -132,9 +136,8 @@ public class CameraHelper implements PreviewCallback {
             // mCamera.setPreviewDisplay(holder);
             mCamera.setPreviewDisplay(localSurfaceHolder);
             mCamera.setPreviewCallbackWithBuffer(this);
-
-            EMVideoCallHelper.getInstance().setResolution(mwidth, mheight);
-
+            EMVideoCallHelper.getInstance().setResolution(mwidth, mheight); // 设置传送比例
+            EMVideoCallHelper.getInstance().setVideoBitrate(bitram); //  设置视频比特率
             mCamera.startPreview();
             Log.d(TAG, "camera start preview");
         } catch (Exception e) {
@@ -191,9 +194,8 @@ public class CameraHelper implements PreviewCallback {
                     mCamera.setDisplayOrientation(180);
                 }
             }
-
             mParameters.setPreviewSize(mwidth, mheight);
-            mParameters.setPreviewFrameRate(15);
+            mParameters.setPreviewFrameRate(mRate);
             mCamera.setParameters(mParameters);
             int mformat = mParameters.getPreviewFormat();
             int bitsperpixel = ImageFormat.getBitsPerPixel(mformat);
@@ -205,9 +207,8 @@ public class CameraHelper implements PreviewCallback {
             // mCamera.setPreviewDisplay(holder);
             mCamera.setPreviewDisplay(localSurfaceHolder);
             mCamera.setPreviewCallbackWithBuffer(this);
-
-            EMVideoCallHelper.getInstance().setResolution(mwidth, mheight);
-
+            EMVideoCallHelper.getInstance().setResolution(mwidth,mheight); // 设置传送比例
+            EMVideoCallHelper.getInstance().setVideoBitrate(bitram); //  设置视频比特率
             mCamera.startPreview();
             Log.d(TAG, "camera start preview");
         } catch (Exception e) {

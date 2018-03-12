@@ -191,9 +191,9 @@ public class GiftActivity extends BaseActivity {
 			intent.putExtra(GiftActivity.GIFT_ENTITY, GsonUtils.objToJson(gift));
 			setResult(RESULT_OK, intent);
 			finish();
-
 		}
 	};
+
 	
 	private GiftFragment getGiftFragment(int index){
 		GiftFragment fragment = new GiftFragment();

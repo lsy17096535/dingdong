@@ -1,27 +1,15 @@
 [
     {
-        "merged": "E:\\AndroidProject\\17_bidong\\AliyunView\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\abc_slide_out_bottom.xml",
-        "source": "C:\\Users\\Frank\\.android\\build-cache\\780e0435959b1ed81c557485242c7cdd5862e5eb\\output\\res\\anim\\abc_slide_out_bottom.xml"
-    },
-    {
-        "merged": "E:\\AndroidProject\\17_bidong\\AliyunView\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\abc_popup_exit.xml",
-        "source": "C:\\Users\\Frank\\.android\\build-cache\\780e0435959b1ed81c557485242c7cdd5862e5eb\\output\\res\\anim\\abc_popup_exit.xml"
-    },
-    {
-        "merged": "F:\\bidong\\17_bidong\\AliyunView\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\abc_popup_enter.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\4367253b26c8590a15196b97ec73040c575ba79b\\output\\res\\anim\\abc_popup_enter.xml"
-    },
-    {
-        "merged": "E:\\AndroidProject\\17_bidong\\AliyunView\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\abc_fade_in.xml",
-        "source": "C:\\Users\\Frank\\.android\\build-cache\\780e0435959b1ed81c557485242c7cdd5862e5eb\\output\\res\\anim\\abc_fade_in.xml"
-    },
-    {
-        "merged": "F:\\bidong\\17_bidong\\AliyunView\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\abc_slide_in_bottom.xml",
+        "merged": "F:\\project_dingdong\\dingdong\\17_bidong\\AliyunView\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\abc_slide_in_bottom.xml",
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\4367253b26c8590a15196b97ec73040c575ba79b\\output\\res\\anim\\abc_slide_in_bottom.xml"
     },
     {
-        "merged": "E:\\AndroidProject\\17_bidong\\AliyunView\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\abc_slide_in_bottom.xml",
-        "source": "C:\\Users\\Frank\\.android\\build-cache\\780e0435959b1ed81c557485242c7cdd5862e5eb\\output\\res\\anim\\abc_slide_in_bottom.xml"
+        "merged": "F:\\project_dingdong\\dingdong\\17_bidong\\AliyunView\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\abc_shrink_fade_out_from_bottom.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\4367253b26c8590a15196b97ec73040c575ba79b\\output\\res\\anim\\abc_shrink_fade_out_from_bottom.xml"
+    },
+    {
+        "merged": "F:\\project_dingdong\\dingdong\\17_bidong\\AliyunView\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\abc_fade_out.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\4367253b26c8590a15196b97ec73040c575ba79b\\output\\res\\anim\\abc_fade_out.xml"
     },
     {
         "merged": "F:\\project_dingdong\\dingdong\\17_bidong\\AliyunView\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\abc_slide_out_top.xml",
@@ -36,10 +24,6 @@
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\4367253b26c8590a15196b97ec73040c575ba79b\\output\\res\\anim\\abc_popup_exit.xml"
     },
     {
-        "merged": "F:\\bidong\\17_bidong\\AliyunView\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\abc_fade_out.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\4367253b26c8590a15196b97ec73040c575ba79b\\output\\res\\anim\\abc_fade_out.xml"
-    },
-    {
         "merged": "F:\\project_dingdong\\dingdong\\17_bidong\\AliyunView\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\abc_grow_fade_in_from_bottom.xml",
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\4367253b26c8590a15196b97ec73040c575ba79b\\output\\res\\anim\\abc_grow_fade_in_from_bottom.xml"
     },
@@ -52,71 +36,7 @@
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\4367253b26c8590a15196b97ec73040c575ba79b\\output\\res\\anim\\abc_popup_enter.xml"
     },
     {
-        "merged": "F:\\bidong\\17_bidong\\AliyunView\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\abc_shrink_fade_out_from_bottom.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\4367253b26c8590a15196b97ec73040c575ba79b\\output\\res\\anim\\abc_shrink_fade_out_from_bottom.xml"
-    },
-    {
-        "merged": "E:\\AndroidProject\\17_bidong\\AliyunView\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\abc_slide_in_top.xml",
-        "source": "C:\\Users\\Frank\\.android\\build-cache\\780e0435959b1ed81c557485242c7cdd5862e5eb\\output\\res\\anim\\abc_slide_in_top.xml"
-    },
-    {
         "merged": "F:\\project_dingdong\\dingdong\\17_bidong\\AliyunView\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\abc_slide_in_top.xml",
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\4367253b26c8590a15196b97ec73040c575ba79b\\output\\res\\anim\\abc_slide_in_top.xml"
-    },
-    {
-        "merged": "F:\\bidong\\17_bidong\\AliyunView\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\abc_slide_in_top.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\4367253b26c8590a15196b97ec73040c575ba79b\\output\\res\\anim\\abc_slide_in_top.xml"
-    },
-    {
-        "merged": "F:\\bidong\\17_bidong\\AliyunView\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\abc_slide_out_top.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\4367253b26c8590a15196b97ec73040c575ba79b\\output\\res\\anim\\abc_slide_out_top.xml"
-    },
-    {
-        "merged": "F:\\project_dingdong\\dingdong\\17_bidong\\AliyunView\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\abc_slide_in_bottom.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\4367253b26c8590a15196b97ec73040c575ba79b\\output\\res\\anim\\abc_slide_in_bottom.xml"
-    },
-    {
-        "merged": "E:\\AndroidProject\\17_bidong\\AliyunView\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\abc_grow_fade_in_from_bottom.xml",
-        "source": "C:\\Users\\Frank\\.android\\build-cache\\780e0435959b1ed81c557485242c7cdd5862e5eb\\output\\res\\anim\\abc_grow_fade_in_from_bottom.xml"
-    },
-    {
-        "merged": "F:\\project_dingdong\\dingdong\\17_bidong\\AliyunView\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\abc_shrink_fade_out_from_bottom.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\4367253b26c8590a15196b97ec73040c575ba79b\\output\\res\\anim\\abc_shrink_fade_out_from_bottom.xml"
-    },
-    {
-        "merged": "E:\\AndroidProject\\17_bidong\\AliyunView\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\abc_shrink_fade_out_from_bottom.xml",
-        "source": "C:\\Users\\Frank\\.android\\build-cache\\780e0435959b1ed81c557485242c7cdd5862e5eb\\output\\res\\anim\\abc_shrink_fade_out_from_bottom.xml"
-    },
-    {
-        "merged": "F:\\project_dingdong\\dingdong\\17_bidong\\AliyunView\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\abc_fade_out.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\4367253b26c8590a15196b97ec73040c575ba79b\\output\\res\\anim\\abc_fade_out.xml"
-    },
-    {
-        "merged": "E:\\AndroidProject\\17_bidong\\AliyunView\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\abc_slide_out_top.xml",
-        "source": "C:\\Users\\Frank\\.android\\build-cache\\780e0435959b1ed81c557485242c7cdd5862e5eb\\output\\res\\anim\\abc_slide_out_top.xml"
-    },
-    {
-        "merged": "F:\\bidong\\17_bidong\\AliyunView\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\abc_popup_exit.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\4367253b26c8590a15196b97ec73040c575ba79b\\output\\res\\anim\\abc_popup_exit.xml"
-    },
-    {
-        "merged": "F:\\bidong\\17_bidong\\AliyunView\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\abc_slide_out_bottom.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\4367253b26c8590a15196b97ec73040c575ba79b\\output\\res\\anim\\abc_slide_out_bottom.xml"
-    },
-    {
-        "merged": "E:\\AndroidProject\\17_bidong\\AliyunView\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\abc_fade_out.xml",
-        "source": "C:\\Users\\Frank\\.android\\build-cache\\780e0435959b1ed81c557485242c7cdd5862e5eb\\output\\res\\anim\\abc_fade_out.xml"
-    },
-    {
-        "merged": "E:\\AndroidProject\\17_bidong\\AliyunView\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\abc_popup_enter.xml",
-        "source": "C:\\Users\\Frank\\.android\\build-cache\\780e0435959b1ed81c557485242c7cdd5862e5eb\\output\\res\\anim\\abc_popup_enter.xml"
-    },
-    {
-        "merged": "F:\\bidong\\17_bidong\\AliyunView\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\abc_grow_fade_in_from_bottom.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\4367253b26c8590a15196b97ec73040c575ba79b\\output\\res\\anim\\abc_grow_fade_in_from_bottom.xml"
-    },
-    {
-        "merged": "F:\\bidong\\17_bidong\\AliyunView\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\abc_fade_in.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\4367253b26c8590a15196b97ec73040c575ba79b\\output\\res\\anim\\abc_fade_in.xml"
     }
 ]
